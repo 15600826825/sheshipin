@@ -1,0 +1,152 @@
+.top{
+	width: 100%;
+	height: 103px;
+	background: #f2f2f2;
+}
+#logo{
+	margin: 20px 0 0 41px;
+	width: 155px;
+	height: 56px;
+	float: left;
+}
+.top p{
+	width: 170px;
+	height: 53px;
+	float: left;
+	line-height: 53px;
+	text-align: center;
+	font-size: 28px;
+	border-left: 1px solid #dbdbdb;
+	margin: 30px 0 0 35px;
+}
+
+.cont{
+	width: 100%;
+	height: 481px;
+	background: url(../img/reg/cont_bg.jpg) no-repeat;
+	position: relative;
+}
+.main{
+	width: 296px;
+	height: 330px;
+	border: 1px solid #dbdbdb;
+	background: #fff;
+	position: absolute;
+	top: 44px;
+	right: 84px;
+	padding: 30px 22px;
+	color: #777777;
+}
+.main b{
+	display: block;
+	font-size: 16px;
+	float: left;
+}
+.main p{
+	float: right;
+	color: #999999;
+}
+.main p a{
+	color: #137ce9;
+}
+#txt{
+	width: 251px;
+	height: 40px;
+	margin-top: 42px;
+	background: #f9f9f9 url(../img/reg/user_icon.png) no-repeat 14px center;
+	border: none;
+	padding-left: 43px;
+	line-height: 40px;
+}
+#pwd{
+	width: 251px;
+	height: 40px;
+	margin-top: 12px;
+	background: #f9f9f9 url(../img/reg/pwd_icon.png) no-repeat 14px center;
+	border: none;
+	padding-left: 43px;
+	line-height: 40px;
+}
+.test{
+	position: relative;
+	width: 288px;
+	height: 34px;
+	padding: 3px;
+	margin-top: 12px;
+	background: #f29dba;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+}
+.test span{
+	width: 52px;
+	height: 34px;
+	background: #fff;
+	color: #f29dba;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 5px;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+}
+#rem,#aut,.main h3{
+	margin-top: 20px;
+	color: #777777;
+}
+#aut{
+	margin-left: 30px;
+}
+.main form a{
+	display: inline-block;
+	margin-left: 40px;
+	color: #777777;
+}
+#btn{
+	width: 295px;
+	height: 44px;
+	background: #E5004B;
+	font-size: 18px;
+	line-height: 44px;
+	text-align: center;
+	color: #fff;
+	border: none;
+	margin-top: 15px;
+	cursor: pointer;
+}
+.friend{
+	margin-top: 15px;
+}
+.friend p,.friend a{
+	float: left;
+}
+.friend p{
+	line-height: 30px;
+}
+.friend a{
+	margin-left: 10px;
+}
+
+.foot{
+	width: 100%;
+	height: 119px;
+	background: #f3f3f3;
+	border-top: 1px solid #dbdbdb;
+}
+.foot p{
+	color: #666666;
+	text-align: center;
+	line-height: 20px;
+	clear: both;
+	margin-top: 22px;
+}
+#gongan{
+	margin: 10px 0 0 492px;
+}
+
+
+
+
+
+

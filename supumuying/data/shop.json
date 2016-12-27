@@ -1,0 +1,48 @@
+{
+		"list" : [
+			{
+				"id" : "shop01",
+				"src" : "list/main_b_a"
+			},
+			{
+				"id" : "shop02",
+				"src" : "list/main_b_b"
+			},
+			{
+				"id" : "shop03",
+				"src" : "list/main_b_c"
+			},
+			{
+				"id" : "shop04",
+				"src" : "list/main_b_d"
+			},
+			{
+				"id" : "shop05",
+				"src" : "list/main_b_e"
+			},
+			{
+				"id" : "shop06",
+				"src" : "list/main_b_f"
+			},
+			{
+				"id" : "shop07",
+				"src" : "list/main_b_g"
+			},
+			{
+				"id" : "shop08",
+				"src" : "list/main_b_h"
+			},
+			{
+				"id" : "shop09",
+				"src" : "list/main_b_i"
+			},
+			{
+				"id" : "shop10",
+				"src" : "list/main_b_j"
+			},
+			{
+				"id" : "shop11",
+				"src" : "list/main_b_k"
+			}
+		]	
+}
