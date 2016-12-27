@@ -1,0 +1,437 @@
+.head{	
+	width:100%;
+	height:80px;
+	background: #ffd414;
+}
+.head .hea{
+	width:1000px;
+	height: 80px;
+	margin:0 auto;
+}
+.gogao{
+	background: #f5f5f5;
+	width:100%;
+	height:20px;
+}
+.gogao a{
+	color: #656565;
+	text-decoration: none;
+}
+.gogaobox{
+	width: 1000px;
+	height: 20px;
+	margin: 0 auto;
+}
+.sj{
+	width: 240px;
+	height: 20px;
+	float: left;
+/*	margin-left: 138px;*/
+	overflow: hidden;
+	position: relative;
+}
+.sj span{
+	line-height: 20px;
+	background: url(../img/laba.jpg) no-repeat left center;
+	padding-left: 20px;
+}
+.topLB{
+	position: absolute;
+	top:0px;
+	left: 56px;
+	display: none;
+	width: 154px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.LBShow{
+	display: block;
+}
+.sj li a{
+	line-height: 20px;	
+}
+.sj li a:hover{
+	color: red;
+}
+.dh{
+	width:514px;
+	height:20px;
+	line-height: 20px;
+	float: right;
+/*	margin-right: 138px;*/
+	position: relative;
+}
+.dh li{
+	float: left;	
+}
+.dh li a{
+	display: block;
+	margin: 0 10px;
+	float: left;
+}
+.dh li a:hover{
+	color: red;
+}
+.dh .weima{
+	background: white;
+	position: absolute;
+	right:20px;
+	top:17px;
+	display: none;
+	z-index: 3;
+}
+
+.logo{
+	width:1000px;
+	margin: 0 auto;
+	clear: both;
+	
+}
+.logo .lg{
+	width: 349px;
+	height: 79px;
+	padding-top: 20px;
+	float: left;
+}
+
+.logo .resou{
+	width:350px;
+	float: left;
+	margin-top:25px;
+	overflow: hidden;
+}
+.logo input{
+	width:280px;
+	height:26px;
+	border:2px solid #d60032;
+	float: left;
+	color: #b3a7a9;
+	padding: 0 10px;
+}
+.logo .btn{
+	width:33px;
+	height:30px;
+	border: none;
+	background: url(../img/4.jpg) no-repeat;
+	float: left;
+}
+.logo .resou ul li{
+	float: left;
+	margin:10px 0 0 10px;
+}
+.logo .resou ul li a{
+	color: #656565;
+}
+.logo .gouwuche{
+	float: right;
+	width:150px;
+	height:30px;
+	margin-top: 25px;
+	border: 1px solid #ebe8e8;
+	position: relative;
+}
+.gouwuche .kongbai{
+	width: 150px;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+}
+.gouwuche img{
+	margin: 5px 0 0 15px;
+}
+.gouwuche a{
+	color: black;
+	margin:5px 0 0 5px;
+}
+.gouwuche a:hover{
+	color: red;
+}
+.gouwuche i{
+	position: absolute;
+	top:10px;
+	right: 10px;
+}
+.gouwuche #down{
+	z-index: 2;
+}
+.gouwuche #up{
+	display: none;
+}
+.gouwuche ul{
+	width:280px;	
+	height:70px;
+	display: none;
+	background: white;
+	border: 1px solid #ebe8e8;
+	position:absolute;
+	right: -1px;
+	top:29px;
+	z-index: 4;
+}
+.gouwuche ul li{
+	line-height: 70px;
+	text-align: center;
+
+}
+
+/*导航*/
+.nav{
+	width: 100%;
+	height:41px;
+	background: red;
+	clear: both;
+	/*overflow: hidden;*/
+}
+.navl{
+	width:1000px;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	clear: both;
+	position: relative;
+}
+.navl ul{
+	float: left;	
+}
+.navl ul li{
+	float: left;
+	line-height: 40px;
+	padding: 0 20px 0;
+}
+.navl ul li a{
+	color: white;
+	font-size: 16px;
+}
+.navl ul li:hover{
+	background:rgba(100,100,100,0.3)
+}
+.list{
+	float: right;
+	width:120px;
+	height: 40px;
+	line-height: 40px;
+}
+.list #xia{
+	z-index: 2;
+	position: absolute;
+	top:12px;
+	right: 5px;
+}
+.list #shang{
+	display: none;
+	position: absolute;
+	top:12px;
+	right: 5px;
+}
+.list span{
+	display: block;
+	color: white;
+	font-size: 14px;
+}
+.list span:hover{
+	background:rgba(100,100,100,0.3);
+
+}
+
+.liststyles{
+	width: 997px;
+	height:280px;
+	background: white;
+	position: absolute;
+	left: 0;
+	top:40px;
+	border: 1px solid red;
+	display: none;
+	z-index: 2;
+}
+.liststyles dl{
+	width:165px;
+	height:280px;
+	float: left;
+	border-right: 1px solid #ebe8e8;
+	
+}
+.liststyles dl dt{
+	width:146px;
+	height:40px;
+	padding-top:20px;
+	margin: 0 auto;
+	border-bottom: 1px dashed #ebe8e8;
+}
+.liststyles dl dt img{
+	margin-left: 20px;
+}
+.liststyles dl dt b{
+	font-size: 14px;
+	display: block;
+	width:90px;
+	height: 35px;
+	float: right;
+	color: black;
+	padding-top:5px;	
+}
+.liststyles dl dt:hover{
+	cursor: pointer;
+}
+.liststyles .b1:hover{     
+	color: #ff4074;
+}
+.liststyles .b2:hover{     
+	color: #49a2ff;
+}
+.liststyles .b3:hover{
+	color: #66bc09;
+}
+.liststyles .b4:hover{
+	color: #ff7c1c;
+}
+.liststyles .b5:hover{
+	color: #ff4074;
+}
+.liststyles .b6:hover{
+	color: #49a2ff;
+}
+
+.liststyles dl dd a{
+	color: black;
+	font-size:12px;
+	line-height: 30px;
+	display: block;
+	width:166px;
+	height: 30px;
+	text-align: center;
+}
+.liststyles dl dd a:hover{
+	color: red;
+}
+
+/*banner*/
+.banner{
+	width: 100%;
+	height: 498px;
+	position: relative;
+}
+.banner img{
+	width: 100%;
+	height: 498px;
+}
+
+
+
+/*、、、、、、、、、、main、、、、、、、、*/
+.main{
+	width: 100%;
+	background: #ffd220;
+}
+
+.main_top1{
+	width: 969px;
+	margin: 0  auto 10px;
+	padding-top: 10px;
+}
+.title1{
+	width: 969px;
+	margin: 0 auto;
+}
+/*、、、、、、、、、精选特惠款 放肆购、、、、、、、、 公用结构代码*/
+.commont{
+	width: 969px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.commont dl{
+	width: 228px;
+	height: 306px;
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 11px;
+	background: white;
+	border: 3px solid white;
+}
+.commont dl:hover{
+	border: 3px solid #fa531b;
+}
+.commont dl:nth-child(4n){
+	margin-right: 0;
+}
+.commont dl dt{
+	width: 214px;
+	height: 214px;
+	padding: 10px;
+}
+.commont dl dt img{
+	width: 214px;
+	height: 214px;
+}
+.commont dl dd{
+	height: 56px;
+	padding: 9px 7px 7px 13px;
+	background: #f3f3f3;
+}
+.commont dl dd b{
+	display: block;
+	color: #222222;
+	height: 17px;
+	font-size: 14px;
+	line-height: 17px;
+	
+}
+.commont .liji{
+	margin-top: 10px;
+	
+}
+.liji p{
+	width: 120px;
+	height: 20px;
+	font-size: 14px;
+	color: #ff2602;
+	font-weight: bold;
+	float: left;
+}
+.liji p span{
+	font-size: 20px;
+}
+.liji a{
+	display: block;
+	width: 54px;
+	height: 36px;
+	float: right;
+	margin-top: -3px;
+}
+/*、、、、、、、、、一口价囤货款 差价双倍返、、、、、、*/
+.title2{
+	width: 969px;
+	margin: 10px auto;
+}
+/*、、、、、、、既要补 还要瘦 美食1折起、、、、、、*/
+.main_go{
+	width: 969px;
+	margin: 0  auto 10px;
+	padding-top: 10px;
+}
+.title_go{
+	width: 969px;
+	margin: 10px auto;
+}
+.title3{
+	width: 969px;
+	margin: 10px auto;
+}
+/*	正在进行的活动	*/
+.ongoing{
+	width: 100%;
+	height: 190px;
+	border-bottom: 1px solid #e3e3e3;
+}
+.ongoning-box{
+	width: 969px;
+	margin: 0 auto;
+}
+.ing1{
+	width: 315px;
+	height: 123px;
+	margin-top: 9px;
+}

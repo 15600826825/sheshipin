@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link rel="icon" href="img/log1.ico" type="image/x-ico" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/registered.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<link rel="stylesheet" href="css/right.css" />
+		<script src="js/cookie.js"></script>
+		<style>
+			@font-face {
+		      font-family: 'fontello';
+		      src: url('./font/fontello.eot?14882169');
+		      src: url('./font/fontello.eot?14882169#iefix') format('embedded-opentype'),
+		           url('./font/fontello.woff?14882169') format('woff'),
+		           url('./font/fontello.ttf?14882169') format('truetype'),
+		           url('./font/fontello.svg?14882169#fontello') format('svg');
+		      font-weight: normal;
+		      font-style: normal;
+		    }
+		     
+		     
+		    .demo-icon
+		    {
+		      font-family: "fontello";
+		      font-style: normal;
+		      font-weight: normal;
+		      speak: none;
+		     
+		      display: inline-block;
+		      text-decoration: inherit;
+		      width: 1em;
+		      margin-right: .2em;
+		      text-align: center;
+		      /* opacity: .8; */
+		     
+		      /* For safety - reset parent styles, that can break glyph codes*/
+		      font-variant: normal;
+		      text-transform: none;
+		     
+		      /* fix buttons height, for twitter bootstrap */
+		      line-height: 1em;
+		     
+		      /* Animation center compensation - margins should be symmetric */
+		      /* remove if not needed */
+		      margin-left: .2em;
+		     
+		      /* You can be more comfortable with increased icons size */
+		      /* font-size: 120%; */
+		     
+		      /* Font smoothing. That was taken from TWBS */
+		      -webkit-font-smoothing: antialiased;
+		      -moz-osx-font-smoothing: grayscale;
+		    }
+     </style>
+	</head>
+	<body>
+	
+		
+	<!--页头	-->
+		<div class="nav">
+			<ul class="dh">
+				<li><a href="#">注册</a>|</li>
+				<li><a href="login.html">登录</a>|</li>
+				<li><a href="#">我的订单</a>|</li>
+				<li><a href="#">物流查询</a>|</li>
+				<li><a href="#">我的关注</a>|</li>
+				<li><a href="#">资讯</a>|</li>
+				<li><a href="#">品牌馆</a>|</li>
+				<li><a href="#"><img src="img/phone.png" style="margin-right: 10px;"/>手机优品惠</a></li>
+				<div class="weima"><img src="img/erweima.jpg"/></div>
+			</ul>
+		</div>	
+	
+		
+	<!--注册页-->	
+		<div class="top">
+			<div class="topl"><img src="img/deng-lu.jpg"/></div>
+			<div class="topr">
+				<p>已经注册,<a href="login.html">现在登录&gt;&gt;</a></p>
+			</div>
+		</div>
+	
+		
+		
+		<div class="zhce">
+			<div class="sjzhce show">手机注册</div>
+			<div class="dszhce">电视用户激活</div>
+		</div>
+		<div class="bigbox">
+		<!--手机注册-->	
+			<div id="box" class="boxx" style="display: block;">
+				<div class="boxs">
+<!--<form onsubmit="return checkForm()">-->
+					<dl class="dl1">
+						<dt><p>手机号码：</p></dt>
+						<dd><input type="text" class="shj" placeholder="请输入常用手机号，避免忘记"/></dd>
+					</dl>
+					<dl class="dl2">
+						<dt><p>验证码：</p></dt>
+						<dd>
+							<input type="text" class="shyz"/>
+							<div class="yzm"></div>看不清楚，<a href="#">换一张</a>
+						</dd>
+					</dl>
+					<dl class="dl3">
+						<dt><p>设置密码：</p></dt>
+						<dd><input type="password" class="szmima" placeholder="6-20位字符，可使用数字、字母或符号的组合"/></dd>
+					</dl>
+					<dl class="dl4">
+						<dt><p>确认密码：</p></dt>
+						<dd><input type="password" class="qrmima" placeholder="请再次输入密码"/></dd>
+					</dl>
+					<dl class="dl5">
+						<dt><p>短信验证码：</p></dt>
+						<dd>
+							<input type="text" class="dxyz"/>
+							<button class="btn1">获取短信验证码</button>
+							<div class="dxm"></div>
+					
+						</dd>
+					</dl>
+					<dl class="dl6">
+						<dt></dt>
+						<dd>
+							<input type="checkbox" checked="checked" class="chose"/>我已阅读并同意
+							<a href="#">《优品惠用户服务承诺》</a>
+						</dd>
+					</dl>
+					<dl class="dl7">
+						<dt></dt>
+						<dd>
+							<input type="button"  class="sbt" value="提交"/>
+								
+						</dd>
+					</dl>
+					<dl class="dl8">
+						<dt></dt>
+						<dd>
+							<p>如有问题请点击<a href="#">帮助中心</a>，或拨打客服热线：<span>400-707-0707</span></p>
+						</dd>
+					</dl>
+<!--</form>-->
+				</div>	
+				<div class="boxr">
+					<ul>
+						<li class="li1">请输入手机号</li>
+						<li class="li2"></li>
+						<li class="li3">请输入密码</li>
+						<li class="li4">请再次输入密码</li>
+						<li class="li5">请先获取验证码！</li>
+						<li class="li6">请选择同意用户服务承诺！</li>
+					</ul>
+				</div>
+			</div>
+			
+		<!--电视用户激活	-->	
+			<div id="dsbox" class="boxx">
+				<div class="dsboxs">
+					<dl class="dsdl1">
+						<dt><p>手机号码：</p></dt>
+						<dd><input type="text" class="dssj" placeholder="请输入常用手机号，避免忘记"/></dd>
+					</dl>
+					<dl class="dsdl2">
+						<dt><p>验证码：</p></dt>
+						<dd>
+							<input type="text" class="dsyz"/>
+							<div class="dsyzm"></div>看不清楚，<a href="#">换一张</a>
+						</dd>
+					</dl>
+					<dl class="dsdl5">
+						<dt><p>短信验证码：</p></dt>
+						<dd>
+							<input type="text" class="dsdx"/>
+							<button class="dsbtn1">获取短信验证码</button>
+							<div class="dsdxm"></div>
+						</dd>
+					</dl>
+					<dl class="dsdl3">
+						<dt><p>设置密码：</p></dt>
+						<dd><input type="password" class="dssz" placeholder="6-20位字符，可使用数字、字母或符号的组合"/></dd>
+					</dl>
+					<dl class="dsdl4">
+						<dt><p>确认密码：</p></dt>
+						<dd><input type="password" class="dsqr" placeholder="请再次输入密码"/></dd>
+					</dl>
+					
+					<dl class="dsdl6">
+						<dt></dt>
+						<dd>
+							<input type="checkbox" checked="checked" class="dschose"/>我已阅读并同意
+							<a href="#">《优品惠用户服务承诺》</a>
+						</dd>
+					</dl>
+					<dl class="dsdl7">
+						<dt></dt>
+						<dd>
+							<button class="btn">提交</button>
+						</dd>
+					</dl>
+					<dl class="dsdl8">
+						<dt></dt>
+						<dd>
+							<p>如有问题请点击<a href="#">帮助中心</a>，或拨打客服热线：<span>400-707-0707</span></p>
+						</dd>
+					</dl>
+				</div>	
+				<div class="dsboxr">
+					<ul>
+						<li class="dsli1">请输入手机号</li>
+						<li class="dsli2"></li>
+						<li class="dsli3">请先获取验证码！</li>
+						<li class="dsli4">请输入密码</li>
+						<li class="dsli5">请再次输入密码</li>
+						<li class="dsli6">请选择同意用户服务承诺！</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/registered.js"></script>
+<!--左侧的图片-->		
+		<div class="left_pic"><img src="img/left_pic.PNG"/></div>
+<!--footer-->		
+		<div class="foot">
+			
+		</div>	
+
+	
+<!--两侧的div-->
+		<div class="righ">
+   		</div>	
+   	<!--右侧的边框线-->	 
+		<div class="solids"></div>
+	</body>
+</html>
+<script src="js/right.js"></script>
+

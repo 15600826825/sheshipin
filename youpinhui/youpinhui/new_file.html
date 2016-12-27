@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="../js/jquery-1.11.3.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			li{
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<ul></ul>
+		<script type="text/javascript">
+		ajaxa();
+			function ajaxa(){
+				$.ajax({
+					type:"get",
+					url:"json/list.json",
+					async:true,
+					success:function(res){
+						for ( var i=0; i<=8;i++){		
+							var op=$("<li data-name="+res.pic[i].name+"><img src='"+res.pic[i].src+"'/><span><b>会员评价：</b><br />“包装仔细，锅具做工不错。”</span></li>");
+				
+							$("ul").prepend(op);
+						}
+					}
+				});
+			}
+		</script>
+	</body>
+</html>

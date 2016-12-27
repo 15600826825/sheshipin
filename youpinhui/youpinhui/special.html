@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>专题</title>
+		<link rel="icon" href="img/log1.ico" type="image/x-ico" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/special.css" />
+		<link rel="stylesheet" href="css/right.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<style>
+			@font-face {
+		    font-family: 'fontello';
+		    src: url('./font/fontello.eot?14882169');
+		    src: url('./font/fontello.eot?14882169#iefix') format('embedded-opentype'),
+		           url('./font/fontello.woff?14882169') format('woff'),
+		           url('./font/fontello.ttf?14882169') format('truetype'),
+		           url('./font/fontello.svg?14882169#fontello') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+		    }
+		     
+		     
+		    .demo-icon
+		    {
+		      font-family: "fontello";
+		      font-style: normal;
+		      font-weight: normal;
+		      speak: none;
+		     
+		      display: inline-block;
+		      text-decoration: inherit;
+		      width: 1em;
+		      margin-right: .2em;
+		      text-align: center;
+		      /* opacity: .8; */
+		     
+		      /* For safety - reset parent styles, that can break glyph codes*/
+		      font-variant: normal;
+		      text-transform: none;
+		     
+		      /* fix buttons height, for twitter bootstrap */
+		      line-height: 1em;
+		     
+		      /* Animation center compensation - margins should be symmetric */
+		      /* remove if not needed */
+		      margin-left: .2em;
+		     
+		      /* You can be more comfortable with increased icons size */
+		      /* font-size: 120%; */
+		     
+		      /* Font smoothing. That was taken from TWBS */
+		      -webkit-font-smoothing: antialiased;
+		      -moz-osx-font-smoothing: grayscale;
+		    }
+     	</style>
+	</head>
+	<body> 
+<!--顶部-->
+    	<div class="head">
+			<div class="hea"><img src="img/special top.jpg" /></div>
+		</div>
+<!--公告栏-->
+		<div class="gogao">
+			<div class="gogaobox">
+				<ul class="sj">
+					<li style="width:60px;"><span>公告：</span></li>
+					<li class="topLB LBShow"><a href="#" style="z-index: 0;top: 0;">优品惠（优购物）5周年庆 ，盛大聚会</a></li>
+					<li class="topLB"><a href="#">【公告】防诈骗提醒</a></li>
+					<li class="topLB"><a href="#">【紧急通知】关于短信发送异常的</a></li>
+					<li class="topLB"><a href="#">【注意】自助语音订购提醒</a></li>
+				</ul>
+		
+				<ul class="dh">
+					<li><a href="registered.html">注册</a>|</li>
+					<li><a href="login.html">登录</a>|</li>
+					<li><a href="#">我的订单</a>|</li>
+					<li><a href="#">物流查询</a>|</li>
+					<li><a href="#">我的关注</a>|</li>
+					<li><a href="#">资讯</a>|</li>
+					<li><a href="#">品牌馆</a>|</li>
+					<li><a href="#"><img src="img/phone.png" style="margin-right: 10px;"/>手机优品惠</a></li>
+					<div class="weima"><img src="img/erweima.jpg"/></div>
+				</ul>
+				
+			</div>
+		</div>
+<!--logo-->
+		<div class="logo">
+			<div class="lg">
+				<img src="img/logo.png" />
+				<img src="img/logom.jpg" />
+			</div>
+		<!--搜索框-->
+			<div class="resou">
+				<input style="text" value="请输入商品名称或货号" />
+				<button class="btn"></button>
+				<ul>
+					<li style="margin-left:0;"><a href="#">热搜：</a></li>
+					<li><a href="#">双立人</a></li>
+					<li><a href="#">品牌厨具</a></li>
+					<li><a href="#">惠人</a></li>
+					<li><a href="#">海参</a></li>
+					<li><a href="#">韩束</a></li>
+				</ul>
+			</div>
+		<!--购物车-->
+			<div class="gouwuche" >
+				<img src="img/gwc.png">
+				<a href="#">我的购物车</a>
+				<i id="down" class="demo-icon icon-down-open-big">&#xe808;</i>
+   				<i id="up" class="demo-icon icon-up-open-big">&#xe809;</i>
+				<ul>
+					<li>购物车还没有商品，快去挑选吧~</li>
+				</ul>
+				<div class="kongbai"></div>
+			</div>
+		</div>
+<!--导航-->
+		<div class="nav">
+			<div class="navl">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">视频</a></li>
+					<li><a href="#">美食</a></li>
+					<li><a href="#">家居</a></li>
+					<li><a href="#">美妆</a></li>
+					<li><a href="#">服饰</a></li>
+					<li><a href="#">海外购</a></li>
+				</ul>
+			<!--列表菜单-->
+				<div class="list">
+					
+					<span>
+						<i class="demo-icon icon-th-list">&#xf009;</i>在售分类
+						<i id="xia" class="demo-icon icon-down-open-big">&#xe808;</i>
+   						<i id="shang" class="demo-icon icon-up-open-big">&#xe809;</i>
+					</span>
+					<div class="liststyles">
+						<!--<dl>
+							<dt>
+								<img src="img/newsix_01.png" />
+								<b class="b1">品质厨房</b>
+							</dt>
+							<dd>
+								<a href="#">电视促销</a>
+								<a href="#">品质厨具</a>
+								<a href="#">厨房电器</a>
+								<a href="#">厨房用具</a>
+							</dd>
+						</dl>
+						<dl>-->					
+					</div>
+				</div>
+			</div>			
+		</div>
+<!--大  banner 图-->		
+		<div class="banner">
+			<img src="img/special ban.jpg" />
+		</div>	
+<!--main-->
+		<div class="main">
+			
+			<div class="main_top1">
+				<img src="img/special.jpg" />				
+				<div class="title1"><img src="img/special-02.jpg" /></div>
+			</div>
+	<!--精选特惠款 放肆购-->
+			<div id="main_box1" class="commont">	
+				<!--<dl>
+					<dt><img src="img/top1_01.jpg"/></dt>
+					<dd>
+						<b>[御泥坊]黑玫瑰蚕丝面膜42片</b>	
+						<div class="liji">
+							<p>抢购价：¥<span>189</span></p>
+							<a href="#"><img src="img/special-03.png"/></a>
+						</div>
+					</dd>
+				</dl>-->							
+			</div>
+	<!--一口价囤货款 差价双倍返-->		
+			<div class="title2"><img src="img/special-03.jpg" /></div>
+			<div id="main_box2" class="commont">	
+				<!--<dl>
+					<dt><img src="img/top1_01.jpg"/></dt>
+					<dd>
+						<b>[御泥坊]黑玫瑰蚕丝面膜42片</b>	
+						<div class="liji">
+							<p>抢购价：¥<span>189</span></p>
+							<a href="#"><img src="img/special-03.png"/></a>
+						</div>
+					</dd>
+				</dl>-->							
+			</div>
+		
+	<!--既要补 还要瘦 美食1折起-->
+			<div id="main_top2" class="main_go"> 
+				<img src="img/special2.jpg" />				
+				<div id="title3"  class="title_go"><img src="img/special-04.jpg" /></div>
+			</div>
+			<div id="main_box3" class="commont">	
+				<!--<dl>
+					<dt><img src="img/top1_01.jpg"/></dt>
+					<dd>
+						<b>[御泥坊]黑玫瑰蚕丝面膜42片</b>	
+						<div class="liji">
+							<p>抢购价：¥<span>189</span></p>
+							<a href="#"><img src="img/special-03.png"/></a>
+						</div>
+					</dd>
+				</dl>-->							
+			</div>
+	<!--既要美 还要润 美妆1折起-->		
+			<div id="main_top3" class="main_go"> 
+				<img src="img/special-05.jpg" />				
+				<div id="title4"  class="title_go"><img src="img/special-06.jpg" /></div>
+			</div>
+			<div id="main_box4" class="commont">	
+				<!--<dl>
+					<dt><img src="img/top1_01.jpg"/></dt>
+					<dd>
+						<b>[御泥坊]黑玫瑰蚕丝面膜42片</b>	
+						<div class="liji">
+							<p>抢购价：¥<span>189</span></p>
+							<a href="#"><img src="img/special-03.png"/></a>
+						</div>
+					</dd>
+				</dl>-->							
+			</div>
+	<!--实用又超值 家居89元起	-->
+			<div id="main_top4" class="main_go"> 
+				<img src="img/special-05.jpg" />				
+				<div id="title5"  class="title_go"><img src="img/special-07.jpg" /></div>
+			</div>
+			<div id="main_box5" class="commont">	
+				<!--<dl>
+					<dt><img src="img/top1_01.jpg"/></dt>
+					<dd>
+						<b>[御泥坊]黑玫瑰蚕丝面膜42片</b>	
+						<div class="liji">
+							<p>抢购价：¥<span>189</span></p>
+							<a href="#"><img src="img/special-03.png"/></a>
+						</div>
+					</dd>
+				</dl>-->							
+			</div>
+	<!--既要暖 又要潮 服饰5折起-->	
+			<div id="main_top5" class="main_go"> 
+				<img src="img/special-05.jpg" />				
+				<div id="title6"  class="title_go"><img src="img/special-08.jpg" /></div>
+			</div>
+			<div id="main_box6" class="commont">	
+				<!--<dl>
+					<dt><img src="img/top1_01.jpg"/></dt>
+					<dd>
+						<b>[御泥坊]黑玫瑰蚕丝面膜42片</b>	
+						<div class="liji">
+							<p>抢购价：¥<span>189</span></p>
+							<a href="#"><img src="img/special-03.png"/></a>
+						</div>
+					</dd>
+				</dl>-->							
+			</div>
+	<!--既要抢眼 又要时尚 珠宝1折起-->	
+			<div id="main_top6" class="main_go"> 
+				<img src="img/special-05.jpg" />				
+				<div id="title7"  class="title_go"><img src="img/special-09.jpg" /></div>
+			</div>
+			<div id="main_box7" class="commont">	
+				<!--<dl>
+					<dt><img src="img/top1_01.jpg"/></dt>
+					<dd>
+						<b>[御泥坊]黑玫瑰蚕丝面膜42片</b>	
+						<div class="liji">
+							<p>抢购价：¥<span>189</span></p>
+							<a href="#"><img src="img/special-03.png"/></a>
+						</div>
+					</dd>
+				</dl>-->							
+			</div>
+	<!--全球优选 海淘2折起-->
+			<div id="main_top7" class="main_go"> 
+				<img src="img/special-05.jpg" />				
+				<div id="title8"  class="title_go"><img src="img/special-10.jpg" /></div>
+			</div>
+			<div id="main_box8" class="commont">	
+				<!--<dl>
+					<dt><img src="img/top1_01.jpg"/></dt>
+					<dd>
+						<b>[御泥坊]黑玫瑰蚕丝面膜42片</b>	
+						<div class="liji">
+							<p>抢购价：¥<span>189</span></p>
+							<a href="#"><img src="img/special-03.png"/></a>
+						</div>
+					</dd>
+				</dl>-->							
+			</div>
+		
+			<div class="title3"><img src="img/special-05.jpg" /></div>		
+		
+		</div>
+<!--正在进行的活动-->
+		<div class="ongoing">
+			<div class="ongoning-box">
+				<img src="img/ing2.jpg" class="ing2"/>
+				<img src="img/ing1.jpg"  class="ing1"/>
+			</div>
+		</div>
+
+
+
+
+<!--footer-->		
+		<div class="foot">
+			
+		</div>
+		
+<!--两侧的div-->
+		<div class="righ">
+   		
+		</div>		
+		
+	</body>
+</html>
+	<script src="js/special.js"></script>
+	<script src="js/right.js"></script>

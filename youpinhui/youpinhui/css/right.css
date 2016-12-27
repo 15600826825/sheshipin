@@ -1,0 +1,137 @@
+
+
+/*页面侧边*/
+
+ .ceb{
+ 	width: 4px;
+ 	height: 100%;
+ 	background: #222222;
+ 	position: fixed;
+ 	top: 0;
+ 	right: 0;
+ 	z-index: 20;
+ }
+
+.right_t{
+	position:fixed;
+    right:1px;
+    top:280px;
+    z-index: 10;
+}
+.right_t li{
+	width:35px;
+	height:35px;
+	border-radius: 5px 0px 0px 5px;
+  	background-color: #222;
+  	position: relative;
+	text-align: center;
+	line-height: 35px;
+	margin: 1px;
+	margin-right: 0; 
+}
+ .numb{
+ 	width: 18px;
+ 	height: 14px;
+ 	line-height: 14px;
+ 	text-align: center;
+ 	font-size: 12px;
+ 	border-radius: 5px;
+ 	background: #f00;
+ 	color: white;
+ 	position: absolute;
+ 	right: 3px;
+ 	top: -2px;
+ 	z-index: 10;
+ }
+ .right_t li a{
+ 	color: white;
+ }
+.right_t li:hover{
+	cursor:pointer;
+}
+.right_t li i{
+	width: 34px;
+	margin-left: 1px;
+	position: relative;
+	z-index: 12;
+	background-color: #222;
+	color:#fff;
+}
+.right_t .s{
+	width: 62px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    font-family: "微软雅黑";
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0;
+    background-color: #222;
+    text-align: center;
+    border-radius: 5px 0px 0px 5px;	
+	
+}
+   
+.right_b{
+	position: fixed;
+	right: 1px;
+	bottom: 0;
+}
+.right_b li{
+	width:35px;
+	height:35px;
+	border-radius: 5px 0px 0px 5px;
+  	background-color: #222;
+  	position: relative;
+	text-align: center;
+	line-height: 35px;
+	margin: 1px;
+	margin-right: 0; 
+}
+.right_b li:hover{
+	cursor:pointer;
+}
+.right_b li i{
+	width: 34px;
+	margin-left: 1px;
+	position: relative;
+	z-index: 12;
+	background-color: #222;
+	color:#fff;
+}
+.right_b .s{
+	width: 62px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    text-align: center;
+    font-family: "微软雅黑";
+    position: absolute;
+    z-index: -1;
+    left: 0px;
+    top: 0;
+    background-color: #222;
+    text-align: center;
+    border-radius: 5px 0px 0px 5px;	
+	
+}
+.right_b a{
+	color: white;
+}
+.activeLi{
+	background:red;  	
+} 
+em{
+	font-size: 13px;
+}
+
+/*页面左侧*/
+.left_pic{
+	width:126px;
+	height:249px;
+	position:absolute;
+	left: 5px;
+	top:150px;
+}

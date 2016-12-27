@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/Mymessage.css" />
+		<link rel="stylesheet" href="css/right.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/cookie.js"></script>
+		<style>
+			@font-face {
+		      font-family: 'fontello';
+		      src: url('./font/fontello.eot?14882169');
+		      src: url('./font/fontello.eot?14882169#iefix') format('embedded-opentype'),
+		           url('./font/fontello.woff?14882169') format('woff'),
+		           url('./font/fontello.ttf?14882169') format('truetype'),
+		           url('./font/fontello.svg?14882169#fontello') format('svg');
+		      font-weight: normal;
+		      font-style: normal;
+		    }
+		     
+		     
+		    .demo-icon
+		    {
+		      font-family: "fontello";
+		      font-style: normal;
+		      font-weight: normal;
+		      speak: none;
+		     
+		      display: inline-block;
+		      text-decoration: inherit;
+		      width: 1em;
+		      margin-right: .2em;
+		      text-align: center;
+		      /* opacity: .8; */
+		     
+		      /* For safety - reset parent styles, that can break glyph codes*/
+		      font-variant: normal;
+		      text-transform: none;
+		     
+		      /* fix buttons height, for twitter bootstrap */
+		      line-height: 1em;
+		     
+		      /* Animation center compensation - margins should be symmetric */
+		      /* remove if not needed */
+		      margin-left: .2em;
+		     
+		      /* You can be more comfortable with increased icons size */
+		      /* font-size: 120%; */
+		     
+		      /* Font smoothing. That was taken from TWBS */
+		      -webkit-font-smoothing: antialiased;
+		      -moz-osx-font-smoothing: grayscale;
+		    }
+     </style>
+	</head>
+	<body>
+	<!--top-->	
+		<div class="head">
+			<div class="hea"><a href="special.html"><img src="img/top1.jpg" /></a></div>
+		</div>
+		
+		<div class="gogao">	
+			<div class="gogaobox">				
+				<ul class="dh">
+					<li><a href="index.html" class="out">退出</a>|</li>
+					<li><a href="#">我的账户</a>|</li>
+					<li><a href="Myorder.html">我的订单</a>|</li>
+					<li><a href="#">物流查询</a>|</li>
+					<li><a href="#">我的关注</a>|</li>
+					<li><a href="#">资讯</a>|</li>
+					<li><a href="#">品牌馆</a>|</li>
+					<li><a href="#"><img src="img/phone.png" style="margin-right: 10px;"/>手机优品惠</a></li>
+					<div class="weima"><img src="img/erweima.jpg"/></div>
+				</ul>
+				<div class="sj"><p>欢迎您，<span>18730252512</span></p></div>
+			</div>
+		</div>
+		
+		<div class="logo">
+			<img src="img/sousuo1.jpg"  class="lg"/>
+			<div class="resou">
+				<input style="text" value="请输入商品名称或货号" />
+				<button class="btn"></button>
+				<ul>
+					<li style="margin-left:0;"><a href="#">热搜：</a></li>
+					<li><a href="#">双立人</a></li>
+					<li><a href="#">品牌厨具</a></li>
+					<li><a href="#">惠人</a></li>
+					<li><a href="#">海参</a></li>
+					<li><a href="#">韩束</a></li>
+				</ul>
+			</div>
+			<div class="gouwuche" >
+				<img src="img/gwc.png">
+				<a href="#">我的购物车</a>
+				<i id="down" class="demo-icon icon-down-open-big">&#xe808;</i>
+   				<i id="up" class="demo-icon icon-up-open-big">&#xe809;</i>
+				<ul>
+					<li>购物车还没有商品，快去挑选吧~</li>
+				</ul>
+				<div class="kongbai"></div>
+			</div>
+		</div>
+<!--nav	-->
+		<div class="nav">
+			<div class="navl">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">今日视频</a></li>
+					<li><a href="#">海外直购</a></li>
+					<li><a href="#">活动专区</a></li>
+					<li><a href="#">最后疯狂</a></li>
+					<li><a href="#">即将上线</a></li>
+				</ul>
+				<!--列表菜单-->
+				<div class="list">
+						<span>
+							<i class="demo-icon icon-th-list">&#xf009;</i>在售分类
+							<i id="xia" class="demo-icon icon-down-open-big">&#xe808;</i>
+	   						<i id="shang" class="demo-icon icon-up-open-big">&#xe809;</i>
+						</span>
+					
+						<div class="liststyles">
+
+					
+						</div>						
+				</div>
+			</div>	
+		</div>
+<!--main-->	
+		<div class="main">
+			
+			<div class="userdiv">
+			<!--main left-->
+				<div class="userl">
+				<!--我的优品惠	-->
+					<div class="myug">
+						<h2>我的优品惠</h2>
+						<div class="myugvip">
+							<div class="mg1"></div>
+							<div class="vip">
+								<p class="vip1"><img src="img/vip.png"/></p>
+								<p class="vip2">187****2512</p>
+							</div>
+						</div>
+						<div class="myugbot">
+							<dl>
+								<dt>订单中心</dt>
+								<dd>
+									<a href="Myorder.html">我的订单</a>
+								</dd>
+								<dd>
+									<a >我的评价</a>									
+								</dd>
+								<dd>
+									<a >我的优惠券</a>									
+								</dd>
+								<dd>
+									<a>我的收藏</a>									
+								</dd>
+								<dd>
+									<a >我的浏览</a>									
+								</dd>
+								<dd>
+									<a >我的试用</a>
+								</dd>
+							</dl>
+							<dl>
+								<dt>星级积分</dt>
+								<dd>
+									<a >会员星级</a>
+								</dd>
+								<dd>
+									<a >我的积分</a>									
+								</dd>								
+							</dl>
+							<dl>
+								<dt>账户信息</dt>
+								<dd>
+									<a  style="	background: url(img/vipbg.jpg) no-repeat;">个人资料</a>
+								</dd>
+								<dd>
+									<a >安全设置</a>									
+								</dd>
+								<dd>
+									<a >收货地址</a>									
+								</dd>
+								<dd>
+									<a>我的消息</a>									
+								</dd>
+								<dd>
+									<a href="Changepassword.html">修改密码</a>									
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="wzah">
+						<p>网站自主下单</p>
+						<span>立减10元</span>
+					</div>
+					<div class="dinggou"><img src="img/dinggou.jpg"/></div>
+					<div class="tuijian">
+						<h2>会员推荐</h2>
+					</div>
+				</div>
+				
+			<!--main right-->	
+				<div class="userr">
+					
+					<h2></h2>
+					
+					<div class="uermessage">
+						<ul class="userinfor">
+							<li class="headimg">
+								<span class="headtitle">当前头像：</span>
+								<span class="infohead">
+									<b class="compile">编辑头像</b>
+								</span>
+								<p>（上传靓照，独一无二）</p>
+							</li>
+							<form class="mesage">
+								<li>
+									<span class="infortitle">用户名：</span>
+									<span>18730252512</span>
+								</li>
+								<li>
+									<span class="infortitle">昵称：</span>
+									<span>
+										<input type="text" class="niname" value="ugoshop_589Flm2w7A"/>
+									</span>
+									<p class="tipa">（真实姓名，精准服务）</p>
+								</li>
+								<li>
+									<span class="infortitle">性别：</span>
+									<span>
+										<input type="radio" name="sex" class="choice" />
+									</span>
+									<span class="mgr">女</span>
+									<span>
+										<input type="radio" name="sex" class="choice" />
+									</span>
+									<span class="mgr">男</span>
+									<span>
+										<input type="radio" name="sex" checked="checked" class="choice" />
+									</span>
+									<span class="mgr">保密</span>
+									<p class="tipa"><strong><img src="img/xing.jpg"/></strong>（真实性别，区别服务）</p>
+								</li>
+								<li>
+									<span class="infortitle">生日：</span>
+									<span class="chosetime">
+										<select class="year">
+											<option>1990</option>
+											<option>1991</option>
+											<option>1992</option>
+											<option>1993</option>
+											<option>1994</option>
+											<option>1995</option>
+											<option>1996</option>
+											<option>1997</option>
+											<option>1998</option>
+											<option>1999</option>
+											<option>2000</option>
+											<option>2001</option>
+											<option>2002</option>
+											<option>2003</option>
+											<option>2004</option>
+											<option>2005</option>
+											<option>2006</option>
+											<option>2007</option>
+											<option>2008</option>
+											<option>2009</option>
+											<option>2010</option>
+											<option>2011</option>
+											<option>2012</option>
+											<option>2013</option>
+											<option>2014</option>
+											<option>2015</option>
+											<option>2016</option>											
+										</select>
+										<select class="month">
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+											<option>04</option>
+											<option>05</option>
+											<option>06</option>
+											<option>07</option>
+											<option>08</option>
+											<option>09</option>
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+										</select>
+										<select class="day">
+											<option>01</option>
+											<option>02</option>
+											<option>03</option>
+											<option>04</option>
+											<option>05</option>
+											<option>06</option>
+											<option>07</option>
+											<option>08</option>
+											<option>09</option>
+											<option>10</option>
+											<option>11</option>
+											<option>12</option>
+											<option>13</option>
+											<option>14</option>
+											<option>15</option>
+											<option>16</option>
+											<option>17</option>
+											<option>18</option>
+											<option>19</option>
+											<option>20</option>
+											<option>21</option>
+											<option>22</option>
+											<option>23</option>
+											<option>24</option>
+											<option>25</option>
+											<option>26</option>
+											<option>27</option>
+											<option>28</option>
+											<option>29</option>
+											<option>30</option>
+											<option>31</option>
+										</select>
+									</span>
+									<p class="tipa"><strong><img src="img/xing.jpg"/></strong>（生日惊喜，准时送到）</p>
+								</li>
+								<li>
+									<span class="infortitle">手机号码：</span>
+									<span>
+										18730252512
+										<a href="#">[更换号码]</a>
+									</span>
+									<span class="yan">已验证</span>
+									<p class="tipa">
+										<strong><img src="img/xing.jpg"/></strong>
+										(手机验证，及时通讯)
+									</p>									
+								</li>
+								<li>
+									<span class="infortitle">固定电话：</span>
+									<span>
+										<input type="text"  class="niname"/>
+									</span>
+								</li>
+								<li>
+									<span class="infortitle">居住地：</span>
+									<span class="addres">
+										<select name="location_p" id="location_p">
+									    </select>
+									    <select name="location_c" id="location_c">
+									    </select>
+									    <select name="location_a" id="location_a">
+									    </select>
+									    <script src="js/region_select.js"></script>
+									    <script type="text/javascript">
+											new PCAS('location_p', 'location_c', 'location_a', '�㶫ʡ', '', '');
+										</script>
+									</span>
+									<p class="tipa"><strong><img src="img/xing.jpg"/></strong>（正确地址，准确投递）</p>
+								</li>
+								<li>
+									<span class="infortitle">联系邮箱：</span>
+									<span>
+										<input type="text" class="niname" /><br />
+										此邮箱验证后，可作为找回密码的方式，请选择常用的邮箱，避免遗忘。
+									</span>
+									<p class="tipa"><strong><img src="img/xing.jpg"/></strong>（绑定邮箱，信息无忧）</p>
+								</li>
+								<li>
+									<span class="infortitle"></span>
+									<span>
+										<input type="submit" class="inforsave" value="保存"/>
+									</span>
+								</li>
+							</form>
+						</ul>
+					</div>
+
+					
+	
+				</div>
+			</div>
+		</div>
+	
+	
+	
+	
+<!--footer-->		
+		<div class="foot">
+			
+		</div>
+		
+<!--两侧的div-->
+		<div class="righ">
+   		
+		</div>
+
+	</body>
+</html>
+<script src="js/Mymessage.js"></script>
+<script src="js/right.js"></script>
+<script src="js/detailsPage.js"></script>

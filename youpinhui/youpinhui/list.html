@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品列表</title>
+		<link rel="icon" href="img/log1.ico" type="image/x-ico" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/right.css" />
+		<link rel="stylesheet" href="css/footer.css"/>
+		<link rel="stylesheet" href="css/list.css" />
+		<script src="js/cookie.js"></script>
+		<style>
+			@font-face {
+		      font-family: 'fontello';
+		      src: url('./font/fontello.eot?14882169');
+		      src: url('./font/fontello.eot?14882169#iefix') format('embedded-opentype'),
+		           url('./font/fontello.woff?14882169') format('woff'),
+		           url('./font/fontello.ttf?14882169') format('truetype'),
+		           url('./font/fontello.svg?14882169#fontello') format('svg');
+		      font-weight: normal;
+		      font-style: normal;
+		    }
+		     
+		     
+		    .demo-icon
+		    {
+		      font-family: "fontello";
+		      font-style: normal;
+		      font-weight: normal;
+		      speak: none;
+		     
+		      display: inline-block;
+		      text-decoration: inherit;
+		      width: 1em;
+		      margin-right: .2em;
+		      text-align: center;
+		      /* opacity: .8; */
+		     
+		      /* For safety - reset parent styles, that can break glyph codes*/
+		      font-variant: normal;
+		      text-transform: none;
+		     
+		      /* fix buttons height, for twitter bootstrap */
+		      line-height: 1em;
+		     
+		      /* Animation center compensation - margins should be symmetric */
+		      /* remove if not needed */
+		      margin-left: .2em;
+		     
+		      /* You can be more comfortable with increased icons size */
+		      /* font-size: 120%; */
+		     
+		      /* Font smoothing. That was taken from TWBS */
+		      -webkit-font-smoothing: antialiased;
+		      -moz-osx-font-smoothing: grayscale;
+		    }
+     </style>
+	</head>
+	<body>
+		<!--top-->	
+		<div class="head">
+			<div class="hea"><a href="special.html"><img src="img/top1.jpg" /></a></div>
+		</div>
+		
+		<div class="gogao">	
+			<div class="gogaobox">				
+				<ul class="dh">
+					<li><a href="index.html" class="out">退出</a>|</li>
+					<li><a href="#">我的账户</a>|</li>
+					<li><a href="#">我的订单</a>|</li>
+					<li><a href="#">物流查询</a>|</li>
+					<li><a href="#">我的关注</a>|</li>
+					<li><a href="#">资讯</a>|</li>
+					<li><a href="#">品牌馆</a>|</li>
+					<li><a href="#"><img src="img/phone.png" style="margin-right: 10px;"/>手机优品惠</a></li>
+					<div class="weima"><img src="img/erweima.jpg"/></div>
+				</ul>
+				<div class="sj"><p>欢迎您，<span>18730252512</span></p></div>
+			</div>
+		</div>
+		
+		<div class="logo">
+			<img src="img/sousuo1.jpg"  class="lg"/>
+			<div class="resou">
+				<input style="text" value="请输入商品名称或货号" />
+				<button class="btn"></button>
+				<ul>
+					<li style="margin-left:0;"><a href="#">热搜：</a></li>
+					<li><a href="#">双立人</a></li>
+					<li><a href="#">品牌厨具</a></li>
+					<li><a href="#">惠人</a></li>
+					<li><a href="#">海参</a></li>
+					<li><a href="#">韩束</a></li>
+				</ul>
+			</div>
+			<div class="gouwuche" >
+				<img src="img/gwc.png">
+				<a href="#">我的购物车</a>
+				<i id="down" class="demo-icon icon-down-open-big">&#xe808;</i>
+   				<i id="up" class="demo-icon icon-up-open-big">&#xe809;</i>
+				<ul>
+					<li>购物车还没有商品，快去挑选吧~</li>
+				</ul>
+				<div class="kongbai"></div>
+			</div>
+		</div>
+<!--nav	-->
+		<div class="nav">
+			<div class="navl">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">今日视频</a></li>
+					<li><a href="#">海外直购</a></li>
+					<li><a href="#">活动专区</a></li>
+					<li><a href="#">最后疯狂</a></li>
+					<li><a href="#">即将上线</a></li>
+				</ul>
+				<!--列表菜单-->
+				<div class="list">
+						<span>
+							<i class="demo-icon icon-th-list">&#xf009;</i>在售分类
+							<i id="xia" class="demo-icon icon-down-open-big">&#xe808;</i>
+	   						<i id="shang" class="demo-icon icon-up-open-big">&#xe809;</i>
+						</span>
+					
+						<div class="liststyles">
+
+					
+						</div>						
+				</div>
+			</div>	
+		</div>
+		
+		
+		
+<!--main-->		
+		<div class="main">
+			<div class="logos"><img src="img/sousuo2.jpg"/></div>
+			<div class="tab">
+				<p><img src="img/sousuo3.jpg"/>在全部商品中搜索“<a href="#">品牌厨具</a>”找到<apan>67</apan>件相关商品</p>
+				<table>
+					<tr>
+						<td style="width: 60px;"><b>品牌：</b></td>
+						<td><a href="#">全部</a></td>
+						<td><a href="#">爱仕达</a></td>
+						<td><a href="#">康宁</a></td>
+						<td><a href="#">双立人</a></td>
+						<td><a href="#">FISSLER</a></td>
+						<td><a href="#">康宁VISIONS</a></td>
+						<td><a href="#">展开</a></td>						
+					</tr>
+					<tr style="border-bottom: none;">
+						<td style="width: 60px;"><b>价格：</b></td>
+						<td><a href="#">全部</a></td>
+						<td><a href="#">0-100</a></td>
+						<td><a href="#">100-200</a></td>
+						<td><a href="#">200-300</a></td>
+						<td><a href="#">300-500</a></td>
+						<td><a href="#">500-1000</a></td>
+						<td><a href="#">展开</a></td>
+					</tr>
+				</table>
+			</div>
+			
+			<div class="chazhao">
+				<ul>
+					<li>快速查找：</li>
+					<li><a href="#">相关度</a>&nbsp;&nbsp;&nbsp;|</li>
+					<li><a href="#">销量</a></li>
+					<li>上架时间</li>
+					<li>价格<img src="img/sousuo5.jpg"/></li>
+				</ul>
+			</div>
+			
+			<ul class="picb" id="picb">
+				<!--<li>
+					<img src="img/sousuo6.jpg"/>
+					<span>
+						<b>会员评价：</b><br />
+						“包装仔细，锅具做工不错。”
+					</span>
+				</li>-->
+			</ul>
+		</div>	
+
+<!--bottom-->
+		<div class="botom">
+			<div class="huodong">
+				您可能喜欢的活动
+			</div>
+			<div class="btpic">
+				<img src="img/hai-5.jpg" />
+				<img src="img/hai-6.jpg" />
+				<img src="img/hai-7.jpg" style="margin-right: 0;"/>
+			</div>
+		</div>
+
+	
+<!--footer-->		
+		<div class="foot">
+			
+		</div>
+		
+<!--两侧的div-->
+		<div class="righ">
+   		
+		</div>
+		
+	</body>
+</html>
+<script src="js/list.js"></script>
+<script src="js/right.js"></script>
+

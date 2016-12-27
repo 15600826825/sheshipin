@@ -1,0 +1,425 @@
+.head{	
+	width:100%;
+	height:80px;
+	background:#f1476e;
+}
+.head .hea{
+	width:1000px;
+	height: 80px;
+	margin:0 auto;
+}
+.head .hea img{
+	width:1000px;
+	height: 80px;
+}
+.gogao{
+	background: #f5f5f5;
+	width:100%;
+	height:20px;
+	clear: both;
+}
+.gogaobox{
+	width: 1000px;
+	height: 20px;
+	margin: 0 auto;
+}
+.gogaobox a{
+	color: #656565;
+	text-decoration: none;
+}
+.sj{
+	width: 150px;
+	height: 20px;
+	line-height: 20px;
+	float: right;
+}
+.dh{
+	height:20px;
+	line-height: 20px;
+	float: right;
+	position: relative;
+}
+.dh li{
+	float: left;	
+}
+.dh li a{
+	display: block;
+	margin: 0 10px;
+	float: left;
+}
+.dh li a:hover{
+	color: red;
+}
+.dh .weima{
+	background: white;
+	position: absolute;
+	right:20px;
+	top:17px;
+	display: none;
+	z-index: 3;
+}
+.logo{
+	width:1000px;
+	margin: 0 auto;
+	overflow: inherit;
+	
+}
+.logo .lg{
+	float: left;
+}
+.logo .resou{
+	width:350px;
+	float: left;
+	margin-top:25px;
+	overflow: hidden;
+}
+.logo input{
+	width:286px;
+	height:26px;
+	border:2px solid #d60032;
+	padding: 0 5px;
+	float: left;
+	color: #b3a7a9;
+}
+.logo .btn{
+	width:33px;
+	height:30px;
+	border: none;
+	background: url(../img/4.jpg) no-repeat;
+	float: left;
+}
+.logo .resou ul li{
+	float: left;
+	margin:10px 0 0 10px;
+}
+.logo .resou ul li a{
+	color: #656565;
+}
+.logo .gouwuche{
+	float: right;
+	width:150px;
+	height:30px;
+	margin-top: 25px;
+	border: 1px solid #ebe8e8;
+	position: relative;
+}
+.gouwuche .kongbai{
+	width: 150px;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 100;
+}
+.gouwuche img{
+	margin: 5px 0 0 15px;
+}
+.gouwuche a{
+	color: black;
+	margin:5px 0 0 5px;
+}
+.gouwuche a:hover{
+	color: red;
+}
+.gouwuche i{
+	position: absolute;
+	top:10px;
+	right: 10px;
+}
+.gouwuche #down{
+	z-index: 2;
+}
+.gouwuche #up{
+	display: none;
+}
+.gouwuche ul{
+	width:280px;	
+	height:70px;
+	display: none;
+	background: white;
+	border: 1px solid #ebe8e8;
+	position:absolute;
+	right: -1px;
+	top:29px;
+	z-index: 4;
+}
+.gouwuche ul li{
+	line-height: 70px;
+	text-align: center;
+
+}
+/*nav*/
+.nav{
+	width: 100%;
+	height:41px;
+	background: red;
+	clear: both;
+	/*overflow: hidden;*/
+}
+.navl{
+	width:1000px;
+	margin: 0 auto;
+	/*overflow: hidden;*/
+	clear: both;
+	position: relative;
+}
+.navl ul{
+	float: left;	
+}
+.navl ul li{
+	float: left;
+	line-height: 40px;
+	padding: 0 20px 0;
+}
+.navl ul li a{
+	color: white;
+	font-size: 16px;
+}
+.navl ul li:hover{
+	background:rgba(100,100,100,0.3)
+}
+.list{
+	float: right;
+	width:120px;
+	height: 40px;
+	line-height: 40px;
+}
+.list #xia{
+	z-index: 2;
+	position: absolute;
+	top:12px;
+	right: 5px;
+}
+.list #shang{
+	display: none;
+	position: absolute;
+	top:12px;
+	right: 5px;
+}
+.list span{
+	display: block;
+	color: white;
+	font-size: 14px;
+}
+.list span:hover{
+	background:rgba(100,100,100,0.3);
+
+}
+
+.liststyles{
+	width: 997px;
+	height:280px;
+	background: white;
+	position: absolute;
+	left: 0;
+	top:40px;
+	border: 1px solid red;
+	display: none;
+	z-index: 2;
+}
+.liststyles dl{
+	width:165px;
+	height:280px;
+	float: left;
+	border-right: 1px solid #ebe8e8;
+	
+}
+.liststyles dl dt{
+	width:146px;
+	height:40px;
+	padding-top:20px;
+	margin: 0 auto;
+	border-bottom: 1px dashed #ebe8e8;
+}
+.liststyles dl dt img{
+	margin-left: 20px;
+}
+.liststyles dl dt b{
+	font-size: 14px;
+	display: block;
+	width:90px;
+	height: 35px;
+	float: right;
+	color: black;
+	padding-top:5px;	
+}
+.liststyles dl dt:hover{
+	cursor: pointer;
+}
+.liststyles .b1:hover{     
+	color: #ff4074;
+}
+.liststyles .b2:hover{     
+	color: #49a2ff;
+}
+.liststyles .b3:hover{
+	color: #66bc09;
+}
+.liststyles .b4:hover{
+	color: #ff7c1c;
+}
+.liststyles .b5:hover{
+	color: #ff4074;
+}
+.liststyles .b6:hover{
+	color: #49a2ff;
+}
+
+.liststyles dl dd a{
+	color: black;
+	font-size:12px;
+	line-height: 30px;
+	display: block;
+	width:166px;
+	height: 30px;
+	text-align: center;
+}
+.liststyles dl dd a:hover{
+	color: red;
+}
+
+/*main*/
+.main{
+	width:100%;
+	background: #efefef;
+
+}
+.logos{
+	width:970px;
+	height: 59px;
+	margin: 0 auto;
+	padding: 10px 0 10px 0;
+	
+}
+.logos img{
+	display: block;
+	width:970px;
+	height: 59px;	
+}
+.tab{
+	width:950px;
+	height: 168px;
+	background: white;
+	margin: 0 auto;
+	padding-left: 20px;
+}
+.tab p{
+	display: block;
+	width: 950px;
+	height: 70px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 14px;
+}
+.tab p a{
+	color: red;
+	font-weight: bold;
+}
+.tab table tr{
+	display: block;
+	width: 930px;
+	height: 40px;
+	line-height: 40px;
+	border-bottom:1px dotted #cccccc ;
+}
+.tab table td{
+	width: 124px;
+	height: 20px;
+	text-align: center;
+}
+.tab table td a{
+	color: #222222;
+	display: block;
+	padding:  0 15px;
+}
+.tab table td:hover a{
+	color: white;
+	background: #00aebd;
+}
+.chazhao{
+	width:960px;
+	height: 40px;
+	margin: 10px auto;
+	padding-left: 10px;
+}
+.chazhao ul li{
+	float: left;
+	margin: 0 10px;
+	line-height: 40px;
+}
+.chazhao ul li a{
+	color: #222222;
+}
+.chazhao ul li:hover a{
+	background: #00bfcf;
+	color: white;
+}
+.main .picb{
+	width:970px;
+
+	margin: 0 auto;
+	position: relative;
+}
+.picb li{
+	float: left;
+	width: 306px;
+	height: 435px;	
+	margin: 0 22px 20px 0;
+	position: absolute;
+	border: 1px solid #d6d6d6;
+	z-index: 3;
+}
+.picb li:nth-child(3n){
+	margin-right: 0;
+}
+.picb li img{
+	display: block;
+	width: 306px;
+	height: 435px;	
+	
+}
+.picb span{
+	display: block;
+	width:295px;
+	height:40px;
+	color: #a79393;
+	line-height: 15px;
+	background: #fff1e7;
+	padding: 10px 0 0 10px;
+	position: absolute;
+	left: 1px;
+	top:437px;
+	z-index: 100;
+	display: none;
+}
+.picb span b{
+	color: #6c6c6c;
+}
+
+
+/*bottom*/
+.botom{
+	width: 970px;
+	height: 240px;
+	margin: 0 auto;
+	position: relative;
+}
+.huodong{
+	width: 195px;
+	height: 30px;
+	margin: 15px  0;
+	background: #222222;
+	line-height: 30px;
+	text-align: center;
+	border-radius: 20px;
+	color: white;
+}
+
+.btpic img{
+	margin-right:2px ;
+	border: 1px solid #dadada;
+}
+.btpic img:hover{
+	border-color:red ;
+}

@@ -1,0 +1,458 @@
+  <!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>优品惠（优购物）女王专属购</title>
+		<link rel="icon" href="img/log1.ico" type="image/x-ico" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script src="js/cookie.js"></script>
+	</head>
+	<style>
+			@font-face {
+		      font-family: 'fontello';
+		      src: url('./font/fontello.eot?14882169');
+		      src: url('./font/fontello.eot?14882169#iefix') format('embedded-opentype'),
+		           url('./font/fontello.woff?14882169') format('woff'),
+		           url('./font/fontello.ttf?14882169') format('truetype'),
+		           url('./font/fontello.svg?14882169#fontello') format('svg');
+		      font-weight: normal;
+		      font-style: normal;
+		    }
+		     
+		     
+		    .demo-icon
+		    {
+		      font-family: "fontello";
+		      font-style: normal;
+		      font-weight: normal;
+		      speak: none;
+		     
+		      display: inline-block;
+		      text-decoration: inherit;
+		      width: 1em;
+		      margin-right: .2em;
+		      text-align: center;
+		      /* opacity: .8; */
+		     
+		      /* For safety - reset parent styles, that can break glyph codes*/
+		      font-variant: normal;
+		      text-transform: none;
+		     
+		      /* fix buttons height, for twitter bootstrap */
+		      line-height: 1em;
+		     
+		      /* Animation center compensation - margins should be symmetric */
+		      /* remove if not needed */
+		      margin-left: .2em;
+		     
+		      /* You can be more comfortable with increased icons size */
+		      /* font-size: 120%; */
+		     
+		      /* Font smoothing. That was taken from TWBS */
+		      -webkit-font-smoothing: antialiased;
+		      -moz-osx-font-smoothing: grayscale;
+		    }
+     </style>
+	<body>
+	<!--网页头部-->
+		<div class="head">
+			<div class="hea"><a href="special.html"><img src="img/top1.jpg" /></a></div>
+		</div>
+	<!--公告栏-->	
+		<div class="gogao">
+			<div class="gogaobox">
+				<ul class="sj">
+					<li style="width:60px;"><span>公告：</span></li>
+					<li class="topLB LBShow"><a href="#" style="z-index: 0;top: 0;">优品惠（优购物）5周年庆 ，盛大聚会</a></li>
+					<li class="topLB"><a href="#">【公告】防诈骗提醒</a></li>
+					<li class="topLB"><a href="#">【紧急通知】关于短信发送异常的</a></li>
+					<li class="topLB"><a href="#">【注意】自助语音订购提醒</a></li>
+				</ul>
+		
+			<!--无用户登录-->
+				<ul class="dh" id="dh1">
+					<li><a href="registered.html">注册</a>|</li>
+					<li><a href="login.html">登录</a>|</li>
+					<li><a href="#">我的订单</a>|</li>
+					<li><a href="#">物流查询</a>|</li>
+					<li><a href="#">我的关注</a>|</li>
+					<li><a href="#">资讯</a>|</li>
+					<li><a href="#">品牌馆</a>|</li>
+					<li><a href="#" style="margin-right: 0;"><img src="img/phone.png" style="margin-right: 4px;"/>手机优品惠</a></li>
+					<div class="weima"><img src="img/erweima.jpg"/></div>
+				</ul>
+			<!--用户登陆后-->				
+				<ul class="dh" id="dh2">
+					<li><p> 欢迎您 ,</p><span></span></li>
+					<li><a href="index.html" class="out">退出</a>|</li>
+					<li><a href="#">我的账户</a>|</li>
+					<li><a href="Myorder.html">我的订单</a>|</li>
+					<li><a href="#">物流查询</a>|</li>
+					<li><a href="#">我的关注</a>|</li>
+					<li><a href="#">资讯</a>|</li>
+					<li><a href="#">品牌馆</a>|</li>
+					<li><a href="#" style="margin-right: 0;"><img src="img/phone.png" style="margin-right: 4px;"/>手机优品惠</a></li>
+					<div class="weima"><img src="img/erweima.jpg"/></div>
+				</ul>
+				
+			</div>
+		</div>
+	<!--logo部分-->	
+		<div class="logo">
+			<div class="lg">
+				<img src="img/logo.png" />
+				<img src="img/logom.jpg" />
+			</div>
+			<div class="resou">
+				<input style="text" value="请输入商品名称或货号" />
+				<button class="btn"></button>
+				<ul>
+					<li style="margin-left:0;"><a href="#">热搜：</a></li>
+					<li><a href="#">双立人</a></li>
+					<li><a href="#">品牌厨具</a></li>
+					<li><a href="#">惠人</a></li>
+					<li><a href="#">海参</a></li>
+					<li><a href="#">韩束</a></li>
+				</ul>
+			</div>
+			<div class="gouwuche" >
+				<img src="img/gwc.png">
+				<a href="#">我的购物车</a>
+				<i id="down" class="demo-icon icon-down-open-big">&#xe808;</i>
+   				<i id="up" class="demo-icon icon-up-open-big">&#xe809;</i>
+				<ul>
+					<li>购物车还没有商品，快去挑选吧~</li>
+				</ul>
+				<div class="kongbai"></div>
+			</div>
+		</div>
+<!--导航-->
+		<div class="nav">
+			<div class="navl">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">视频</a></li>
+					<li><a href="#">美食</a></li>
+					<li><a href="#">家居</a></li>
+					<li><a href="#">美妆</a></li>
+					<li><a href="#">服饰</a></li>
+					<li><a href="#">海外购</a></li>
+				</ul>
+			<!--划过显示列表-->
+				<div class="list">					
+					<span>
+						<i class="demo-icon icon-th-list">&#xf009;</i>在售分类
+						<i id="xia" class="demo-icon icon-down-open-big">&#xe808;</i>
+   						<i id="shang" class="demo-icon icon-up-open-big">&#xe809;</i>
+					</span>
+					<div class="liststyles">
+						<!--<dl>
+							<dt>
+								<img src="img/newsix_01.png" />
+								<b class="b1">品质厨房</b>
+							</dt>
+							<dd>
+								<a href="#">电视促销</a>
+								<a href="#">品质厨具</a>
+								<a href="#">厨房电器</a>
+								<a href="#">厨房用具</a>
+							</dd>
+						</dl>
+						<dl>-->
+					
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+<!--banner-->		
+		<div class="banner">
+			<ul class="pic">
+				<li class="picShow"><a href="special.html"><img src="img/banner5.jpg"/></a></li>
+				<li><img src="img/banner2.jpg"/></li>
+				<li><img src="img/banner3.jpg"/></li>
+				<li><img src="img/banner4.jpg"/></li>
+				<li><img src="img/banner1.png"/></li>
+			</ul>
+			<div class="yuan">
+				<div class="active"></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+			<div id="anniu_l" class="an">&lt;</div>
+			<div id="anniu_r" class="an">&gt;</div>
+		</div>
+		
+<!--main-->		
+		<div class="main">
+		<!--左侧二维码-->
+			<div class="erweima">
+				<img src="img/lft1.png" />
+				<img src="img/lft2.png" />
+			</div>
+			
+			<div class="jingxuan">
+			<!--小轮播图-->
+				<div class="boxl">
+					<div class="bigdl">	
+						<dl class="bigShow">
+							<dt><img src="img/tab1.jpg"</dt>
+							<dd><img src="img/dd1.PNG"/></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/tab2.jpg"</dt>
+							<dd><img src="img/dd2.PNG"/></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/tab3.jpg"</dt>
+							<dd><img src="img/dd3.PNG"/></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/tab4.jpg"</dt>
+							<dd><img src="img/dd4.PNG"/></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/tab5.jpg"</dt>
+							<dd><img src="img/dd5.PNG"/></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/tab6.jpg"</dt>
+							<dd><img src="img/dd6.PNG"/></dd>
+						</dl>
+					</div>
+					<ol>
+						<li class="active"><img src="img/tap1.jpg"</li>
+						<li><img src="img/tap2.jpg"</li>
+						<li><img src="img/tap3.jpg"</li>
+						<li><img src="img/tap4.jpg"</li>
+						<li><img src="img/tap5.jpg"</li>
+						<li><img src="img/tap6.jpg"</li>
+					</ol>
+					<img class="meiri" src="img/jingxuan.png"/>
+					<img src="img/huaguo.png" class="huaguo"/>
+				</div>
+			<!--商品直播预告-->
+				<div class="boxr">
+					<div class="tv">
+						<img src="img/tv_ugo.jpg" />
+					</div>
+					<div class="shipin">
+						<dl>
+							<dt><img src="img/shipin.PNG"/></dt>
+							<dd>
+								<p>羽西虫草焕颜新肌无痕<br/>霜18件（单件约39元）</p><br />
+								<span>¥699</span><br />
+								<img src="img/shijian.PNG" /><br />
+								<a href="#">立即抢购&gt;</a>	
+							</dd>
+						</dl>
+					</div>
+					<div class="zhibo">
+						<dl>
+							<dt><span>24小时</span>直播预告</dt>
+							<dd>
+								<ul>
+									<li class="show"><img src="img/zhibo1.PNG"/></li>
+									<li><img src="img/zhibo2.PNG"/></li>
+									<li><img src="img/zhibo3.PNG"/></li>
+									<li><img src="img/zhibo4.PNG"/></li>
+									<li><img src="img/zhibo5.PNG"/></li>
+									<li><img src="img/zhibo6.jpg"/></li>
+								</ul>
+								<div class="niu_l">&lt;</div>
+								<div class="niu_r">&gt;</div>
+							</dd>
+						</dl>
+					</div>
+					<div class="hot">
+						<dl>
+							<dt><img src="img/hot1.PNG"/></dt>
+							<dd><a href="#">TV直播</a></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/hot2.PNG"/></dt>
+							<dd><a href="#">今日推荐</a></dd>
+						</dl>
+						<dl>
+							<dt><img src="img/hot3.PNG"/></dt>
+							<dd><a href="#">热销榜单</a></dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+	<!--精品促销-->		
+			<div class="cuxiao">
+				<div class="cutp">
+					<img src="img/well_chosen.jpg" />
+					<div class="xiantiao"><div class="kong"></div></div>
+				</div>
+				<div class="cubt">
+					<img src="img/c1.jpg">
+					<img src="img/c2.jpg" style="margin-right: 0;">
+					<img src="img/c3.jpg">
+					<img src="img/c4.jpg" style="margin-right: 0;">
+				</div>
+			</div>
+	<!--全球尖货-->
+			<div class="jianhuo">
+				<div class="jiantp">
+					<img src="img/golbal_goods.jpg" />
+					<div class="xiantiao"><div class="bai"></div></div>
+				</div>
+				<div class="jianbt">
+
+<!--					<div class="picBox">
+						<dl class="picbox">
+							<dt><img src="img/j1.jpg"/></dt>
+							<dd>
+								<a href="#">[万岁果园]香甜可口枣夹核桃218g*8袋</a>
+								<span class="ms">【买手说】万岁果园枣有心上人，红枣夹核桃，就要</span>
+								<div class="pricebox">
+									<div class="pric">
+										¥169
+										<span class="zj">直降</span>
+										<span class="by">包邮</span>
+									</div>
+									<p><span>148人</span>已购买</p>
+								</div>
+							</dd>
+						</dl>
+						<div class="ppai">
+							<span class="gn">品牌，国内发货</span>
+							<span class="jl"></span>
+						</div>
+					</div>-->
+						
+				</div>
+			</div>
+		</div>
+
+<!--footer-->		
+		<div class="foot">
+			<!--<div class="foot1">
+				<img src="img/footer_ad.jpg" />
+			</div>
+			<div class="foot2">
+				<div class="fotl">
+					<dl>
+						<dt>新手上路</dt>
+						<dd>
+							<a href="#">新用户注册</a>
+							<a href="#">忘记密码</a>
+							<a href="#">购物流程</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付配送</dt>
+						<dd>
+							<a href="#">新用户注册</a>
+							<a href="#">忘记密码</a>
+							<a href="#">购物流程</a>
+						</dd>
+					</dl>
+					<dl>
+						<dt>会员服务</dt>
+						<dd>
+							<a href="#">新用户注册</a>
+							<a href="#">忘记密码</a>
+							<a href="#">购物流程</a>
+							<a href="#">购物流程</a>
+						</dd>
+					</dl>
+					<dl style="border-right: none;">
+						<dt>关于优品惠</dt>
+						<dd>
+							<a href="#">新用户注册</a>
+							<a href="#">忘记密码</a>
+							<a href="#">购物流程</a>
+						</dd>
+					</dl>	
+				</div>
+				<div class="fotr">
+					<img src="img/foot.jpg" />
+				</div>
+			</div>
+			<div class="foot3">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">关于优品惠</a></li>
+					<li><a href="#">优购物</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">招贤纳士</a></li>
+					<li><a href="#">招商专区</a></li>
+					<li><a href="#">供应商入口</a></li>
+					<li><a href="#">友情链接</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">资讯中心</a></li>
+					<li><a href="#">评论</a></li>
+					<li><a href="#" style="border-right: none;">图片</a></li>
+				</ul>
+				<dl>
+					<dt>友情链接：</dt>
+					<dd>
+						<a href="#">华为商城</a>
+						<a href="#">佐卡伊珠宝网</a>
+						<a href="#">华强北</a>
+						<a href="#">淘鞋网</a>
+						<a href="#">团购王</a>
+						<a href="#">中国零食网</a>
+						<a href="#">腕表名表</a>
+						<a href="#">太平洋家居产品库</a>
+						<a href="#">网上购物</a>
+						<a href="#">团购网</a>
+						<a href="#">钻石</a>
+						<a href="#">城市联盟</a>
+						<a href="#">手表</a>
+						<a href="#">九块邮</a>
+						<a href="#">婚礼珠宝</a>
+					</dd>
+				</dl>
+				<p>优品惠（优购物）全球优品特卖网站 专属于千万女性的优品特卖网站,优品惠（优购物）电视购物官方网站,100%正品保证 支持货到付款.</p>
+				<span>Copyright©2007-2015   北京优购文化发展有限公司版权所有   京ICP备14018505号   食品流通许可证编号SP1103021310006741</span>
+				<i> 公司地址:北京市经济技术开发区同济南路19号   服务热线：400-707-0707</i>
+			</div>-->
+		</div>
+		
+<!--两侧的div-->
+		<div class="righ">
+			<!--<div class="ceb"></div>
+			<div id="right">
+		    	<ul class="right_t">
+		    		<li>
+		        	<i class="demo-icon icon-user">&#xe805;</i><em class="s">我的会员</em>     	
+		    		</li>
+		    		<li>
+		        	 <i class="demo-icon icon-basket">&#xe80e;</i> <em class="s">购物车</em>   	
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-heart-empty-1">&#xe80d;</i> <em class="s">我的关注</em>  	       	
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-headphones">&#xe802;</i>  <em class="s">在线客服</em>    	
+		    		</li>
+		    		
+		    	</ul>
+		    	<ul class="right_b">
+		    		<li>
+		        	<i class="demo-icon icon-up-open-big">&#xe809;</i>	 <em class="s"><a href="shou ye .html">返回首页</a></em>  	
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-pencil">&#xe80f;</i>	 <em class="s">调卷问查</em>  	
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-up-open-big">&#xe809;</i>	 <em class="s">返回顶部</em>  	
+		    		</li>
+		    	</ul>
+	   		</div>-->
+		</div>	
+	</body>
+</html>
+	<script src="js/index.js"></script>
+	<script src="js/right.js"></script>
+

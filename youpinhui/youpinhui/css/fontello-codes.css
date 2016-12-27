@@ -1,0 +1,18 @@
+
+.icon-heart:before { content: '\e800'; } /* '' */
+.icon-heart-empty:before { content: '\e801'; } /* '' */
+.icon-headphones:before { content: '\e802'; } /* '' */
+.icon-search:before { content: '\e803'; } /* '' */
+.icon-volume-up:before { content: '\e804'; } /* '' */
+.icon-user:before { content: '\e805'; } /* '' */
+.icon-right-open-big:before { content: '\e806'; } /* '' */
+.icon-left-open-big:before { content: '\e807'; } /* '' */
+.icon-down-open-big:before { content: '\e808'; } /* '' */
+.icon-up-open-big:before { content: '\e809'; } /* '' */
+.icon-weibo:before { content: '\e80a'; } /* '' */
+.icon-thumbs-up:before { content: '\e80b'; } /* '' */
+.icon-heart-1:before { content: '\e80c'; } /* '' */
+.icon-heart-empty-1:before { content: '\e80d'; } /* '' */
+.icon-basket:before { content: '\e80e'; } /* '' */
+.icon-pencil:before { content: '\e80f'; } /* '' */
+.icon-th-list:before { content: '\f009'; } /* '' */

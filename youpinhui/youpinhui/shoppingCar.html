@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我的购物车</title>
+		<link rel="icon" href="img/log1.ico" type="image/x-ico" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/right.css" />
+		<link rel="stylesheet" href="css/footer.css"/>
+		<link rel="stylesheet" href="css/shoppingCar.css" />
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/cookie.js"></script>
+		<style>
+			@font-face {
+		      font-family: 'fontello';
+		      src: url('./font/fontello.eot?14882169');
+		      src: url('./font/fontello.eot?14882169#iefix') format('embedded-opentype'),
+		           url('./font/fontello.woff?14882169') format('woff'),
+		           url('./font/fontello.ttf?14882169') format('truetype'),
+		           url('./font/fontello.svg?14882169#fontello') format('svg');
+		      font-weight: normal;
+		      font-style: normal;
+		    }
+		     
+		     
+		    .demo-icon
+		    {
+		      font-family: "fontello";
+		      font-style: normal;
+		      font-weight: normal;
+		      speak: none;
+		     
+		      display: inline-block;
+		      text-decoration: inherit;
+		      width: 1em;
+		      margin-right: .2em;
+		      text-align: center;
+		      /* opacity: .8; */
+		     
+		      /* For safety - reset parent styles, that can break glyph codes*/
+		      font-variant: normal;
+		      text-transform: none;
+		     
+		      /* fix buttons height, for twitter bootstrap */
+		      line-height: 1em;
+		     
+		      /* Animation center compensation - margins should be symmetric */
+		      /* remove if not needed */
+		      margin-left: .2em;
+		     
+		      /* You can be more comfortable with increased icons size */
+		      /* font-size: 120%; */
+		     
+		      /* Font smoothing. That was taken from TWBS */
+		      -webkit-font-smoothing: antialiased;
+		      -moz-osx-font-smoothing: grayscale;
+		    }
+     </style>
+	</head>
+	<body>
+<!--top-->	
+		<div class="head">
+			<div class="hea"><a href="special.html"><img src="img/top1.jpg" /></a></div>
+		</div>
+		
+		<div class="gogao">	
+			<div class="gogaobox">
+				<ul class="dh">
+					<li><a href="index.html" class="out">退出</a>|</li>
+					<li><a href="#">我的账户</a>|</li>
+					<li><a href="Myorder.html">我的订单</a>|</li>
+					<li><a href="#">物流查询</a>|</li>
+					<li><a href="#">我的关注</a>|</li>
+					<li><a href="#">资讯</a>|</li>
+					<li><a href="#">品牌馆</a>|</li>
+					<li><a href="#"><img src="img/phone.png" style="margin-right: 10px;"/>手机优品惠</a></li>
+					<div class="weima"><img src="img/erweima.jpg"/></div>
+				</ul>
+				<div class="sj"><p>欢迎您，<span>187****2512</span></p></div>
+			</div>
+		</div>
+		
+		<div class="logo">
+			<img src="img/sousuo1.jpg"  class="lg"/>
+			<img src="img/gouwu1.PNG" class="rt" />
+		</div>
+<!--main-->		
+		<div class="boxs">
+		<!--没有买东西时的购物车-->
+			<div class="box">
+				<dl>
+					<dt><img src="img/gouwu2.PNG"/></dt>
+					<dd>
+						<p>
+							<span>购物车空空的呦~</span><a href="index.html">去挑选商品&gt;</a><br/>
+							登录之后可以显示之前加入的商品<a href="login.html" style="margin-left: 0;"><input type="button" value="登录" class="btn" /></a>
+						</p>
+						
+					</dd>
+				</dl>
+			</div>
+		<!--有了商品之后的购物车-->
+			<div class="car_box">
+				<p class="my_car">我的购物车</p>
+				<div class="mycar">
+				<!--购物车商品信息栏-->
+					<ul class="car_tit">
+						<li class="tit_chick">
+							<input checked="checked" type="checkbox" id="qx" />
+							<lable>全选</lable>
+						</li>
+						<li class="tit_meg">商品信息</li>
+						<li class="tit_price">单价（元）</li>
+						<li class="tit_content">数量 </li>
+						<li class="tit_sum">小计（元）</li>
+						<li class="tit_action">操作</li>
+					</ul>
+				<!--加入购物车的每一个商品-->
+					<div class="divv">
+						
+					</div>
+					<!--<div class="cart_form">-->
+						<!--<div class="shop">
+							<div class="c_meg">
+								<dl>
+									<dt><img src="img/g1.jpg"/></dt>
+									<dd>
+										<p class="m_tit">
+											<a href="#">沃隆营养美味坚果（共60包，单价约五元）</a>
+										</p>
+									</dd>
+								</dl>
+							</div>
+							<div class="c_price">
+								<p class="c_price_num">
+									¥<i>298</i>
+								</p>
+							</div>
+							<div class="c_content">
+								<a href="#" class="reduce">-</a>
+								<input value="1" type="text" />
+								<a href="###" class="adds">+</a>
+							</div>
+							<div class="c_sum">
+								<p>
+									¥<i>298</i>
+								</p>
+							</div>
+							<div class="c_action">
+								<i class="i_del" data-role="del">删除</i>
+							</div>
+							<div class="c_check">
+								<input checked="checked" type="checkbox" />
+							</div>
+						</div>-->
+					<!--</div>-->			
+				</div>
+				<!--商品结算-->
+				<div class="cart_clear">
+					<div class="c_balance">
+						<div class="c_count">
+							<p class="c_clearfix">
+								<span class="c_rt">
+									¥<i class="fs fs_14"></i>
+								</span>
+								<span class="c_lt">商品金额：</span>
+								<span class="c_piece">
+									共<i>0</i>件商品
+								</span>
+							</p>
+							<p class="c_clearfix">
+								<span class="c_rt">
+									-¥<i class="fs">0</i>
+								</span>
+								<span class="c_lt">
+									优惠金额：
+								</span>
+							</p>
+							<p class="c_clearfix">
+								<span class="c_rt c_paid">
+									¥<i>0</i>
+								</span>
+								<span class="c_lt fw">实付金额：</span>
+							</p>
+						</div>
+					</div>
+					<div class="c_balance_bt">
+						<div class="b_check">
+							<input checked="checked" type="checkbox" />
+							<label>全选</label>
+						</div>
+						<b class="b_del">全部删除</b>
+						<a class="balance_bt" href="#">立即结算</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+<!--footer-->		
+		<div class="foot">
+			
+		</div>
+		
+<!--两侧的div-->
+		<div class="righ">
+   		
+		</div>
+		
+	</body>
+</html>
+<script src="js/right.js"></script>
+<script src="js/shoppingcar.js"></script>
+<script src="js/jquery.cookie.js"></script>

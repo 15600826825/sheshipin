@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>详情页</title>
+		<link rel="icon" href="img/log1.ico" type="image/x-ico" />
+		<script src="js/jquery-1.11.3.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/right.css" />
+		<link rel="stylesheet" href="css/footer.css"/>
+		<link rel="stylesheet" href="css/detailsPage.css" />
+		<script src="js/cookie.js"></script>
+		<style>
+			@font-face {
+		      font-family: 'fontello';
+		      src: url('./font/fontello.eot?14882169');
+		      src: url('./font/fontello.eot?14882169#iefix') format('embedded-opentype'),
+		           url('./font/fontello.woff?14882169') format('woff'),
+		           url('./font/fontello.ttf?14882169') format('truetype'),
+		           url('./font/fontello.svg?14882169#fontello') format('svg');
+		      font-weight: normal;
+		      font-style: normal;
+		    }
+		     
+		     
+		    .demo-icon
+		    {
+		      font-family: "fontello";
+		      font-style: normal;
+		      font-weight: normal;
+		      speak: none;
+		     
+		      display: inline-block;
+		      text-decoration: inherit;
+		      width: 1em;
+		      margin-right: .2em;
+		      text-align: center;
+		      /* opacity: .8; */
+		     
+		      /* For safety - reset parent styles, that can break glyph codes*/
+		      font-variant: normal;
+		      text-transform: none;
+		     
+		      /* fix buttons height, for twitter bootstrap */
+		      line-height: 1em;
+		     
+		      /* Animation center compensation - margins should be symmetric */
+		      /* remove if not needed */
+		      margin-left: .2em;
+		     
+		      /* You can be more comfortable with increased icons size */
+		      /* font-size: 120%; */
+		     
+		      /* Font smoothing. That was taken from TWBS */
+		      -webkit-font-smoothing: antialiased;
+		      -moz-osx-font-smoothing: grayscale;
+		    }
+     </style>
+	</head>
+	<body>
+		<!--top-->	
+		<div class="head">
+			<div class="hea"><a href="special.html"><img src="img/top1.jpg" /></a></div>
+		</div>
+		
+		<div class="gogao">	
+			<div class="gogaobox">
+				<ul class="dh">
+					<li><a href="index.html" class="out">退出</a>|</li>
+					<li><a href="#">我的账户</a>|</li>
+					<li><a href="#">我的订单</a>|</li>
+					<li><a href="#">物流查询</a>|</li>
+					<li><a href="#">我的关注</a>|</li>
+					<li><a href="#">资讯</a>|</li>
+					<li><a href="#">品牌馆</a>|</li>
+					<li><a href="#"><img src="img/phone.png" style="margin-right: 10px;"/>手机优品惠</a></li>
+					<div class="weima"><img src="img/erweima.jpg"/></div>
+				</ul>
+				<div class="sj"><p>欢迎您，<span>187****2512</span></p></div>
+			</div>
+		</div>
+		
+		<div class="logo">
+			<img src="img/sousuo1.jpg"  class="lg"/>
+			<div class="resou">
+				<input style="text" value="请输入商品名称或货号" />
+				<button class="btn"></button>
+				<ul>
+					<li style="margin-left:0;"><a href="#">热搜：</a></li>
+					<li><a href="#">双立人</a></li>
+					<li><a href="#">品牌厨具</a></li>
+					<li><a href="#">惠人</a></li>
+					<li><a href="#">海参</a></li>
+					<li><a href="#">韩束</a></li>
+				</ul>
+			</div>
+			<div class="gouwuche" >
+				<img src="img/gwc.png">
+				<a href="#">我的购物车</a>
+				<i id="down" class="demo-icon icon-down-open-big">&#xe808;</i>
+   				<i id="up" class="demo-icon icon-up-open-big">&#xe809;</i>
+				<ul>
+					<li>购物车还没有商品，快去挑选吧~</li>
+				</ul>
+				<div class="kongbai"></div>
+			</div>
+		</div>
+<!--nav	-->
+		<div class="nav">
+			<div class="navl">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="#">视频</a></li>
+					<li><a href="#">美食</a></li>
+					<li><a href="#">家居</a></li>
+					<li><a href="#">美妆</a></li>
+					<li><a href="#">服饰</a></li>
+					<li><a href="#">海外购</a></li>
+				</ul>
+			<!--列表菜单-->
+				<div class="list">
+					
+					<span>
+						<i class="demo-icon icon-th-list">&#xf009;</i>在售分类
+						<i id="xia" class="demo-icon icon-down-open-big">&#xe808;</i>
+   						<i id="shang" class="demo-icon icon-up-open-big">&#xe809;</i>
+					</span>
+					<div class="liststyles">
+					
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+<!--main-->		
+		<div class="main">
+			
+			<div class="boxs1">
+				<dl>
+					<dt>当前位置：</dt>
+					<dd>
+						<a href="#">首页&nbsp;&nbsp;&gt;</a>
+						<a href="#">厨房&nbsp;&nbsp;&gt;</a>
+						<a href="#">品质厨具&nbsp;&nbsp;&gt;</a>
+						<a href="#">品牌锅具&nbsp;&nbsp;&gt;</a>
+						<a href="#">双立人TWINNovaIII中式炒锅尊享装（锅*4+刀具4件组+多用剪+锅铲）</a>
+						
+					</dd>
+				</dl>
+			</div>
+			
+			<div class="boxs2">
+				<!--原图-->
+				<div class="boxs2_l">
+					<div class="boxs2_ltp1">
+						<img src="img/s1.jpg" style="z-index: 2;display: block;" class="smallImg"/>						
+						<img src="img/s3.jpg" class="smallImg"/>
+						<img src="img/s4.jpg" class="smallImg"/>
+						<img src="img/s5.jpg" class="smallImg"/>
+						<div class="drag"></div>
+					</div>
+					<!--放大之后的图片-->
+					<div class="boxs2_ltp2">
+						<img src="img/s1.jpg" style="z-index: 2;display: block;" class="bigImg"/>
+						<img src="img/s3.jpg" class="bigImg"/>
+						<img src="img/s4.jpg" class="bigImg"/>
+						<img src="img/s5.jpg" class="bigImg"/>
+					</div>
+					<!--小图-->
+					<div class="boxs2_lbt1">
+						<img src="img/s1.jpg">
+						<img src="img/s3.jpg" />
+						<img src="img/s4.jpg" />
+						<img src="img/s5.jpg" />
+					</div>
+					<div class="boxs2_lbt2">
+						<a href="#" style="background: url(img/yiguanzhu.jpg) no-repeat left center;">已关注</a>
+						<a href="#" style="background: url(img/fenxiang.jpg) no-repeat left center;">分享</a>	
+					</div>
+				</div>
+				<!--商品详细信息-->
+				<div class="boxs2_r">
+					<p>双立人</p>
+					<b>双立人TWINNovaIII中式炒锅尊享装（锅*4+刀具4件组+多用剪+锅铲）</b>
+					<p class="sm">【买手说】德国双立人与法国铸铁锅的组合搭配，中式菜肴跟法国大餐的美味享受，尽在中式炒锅尊享装 <p>
+					<div class="shop_sprice">
+						<p class="p1">价格<span class="span1">¥1998</span></p>
+						<p class="p2">优惠<a class="span2">包邮</a>订单金额满168元包邮</p>
+					</div>
+					<dl class="dizhi">
+						<dt>送至</dt>
+						<dd>
+							<select name="location_p" id="location_p">
+						    </select>
+						    <select name="location_c" id="location_c">
+						    </select>
+						    <select name="location_a" id="location_a">
+						    </select>
+						    <script src="js/region_select.js"></script>
+						    <script type="text/javascript">
+								new PCAS('location_p', 'location_c', 'location_a', '�㶫ʡ', '', '');
+							</script>
+							有货
+						</dd>
+					</dl>
+					<dl class="yanse">
+						<dt>颜色</dt>
+						<dd><img src="img/xiangqing6.jpg"/></dd>
+					</dl>
+					<dl class="shuliang">
+						<dt>数量</dt>
+						<dd>
+							<button class="btn1" style="border-right: 1px solid #cccccc;">-</button>
+							<input type="text" class="shop_amount" value="1" />
+							<button class="btn2" style="border-left: 1px solid #cccccc;">+</button>
+						</dd>
+					</dl>
+					<div class="btn3">
+						<i class="demo-icon icon-basket">&#xe80e;</i>
+						<a>加入购物车</a>
+					</div>	
+					
+				</div>
+			</div>
+			<!--弹窗-->
+			<div class="windows">
+				<h2>提醒<span class="close"><img src="img/close.png"/></span></h2>
+				<div class="suces">
+					<p>加入购物车成功</p>
+					<a href="index.html">继续购物</a>
+					<a href="shoppingCar.html" style="margin-left: 10px;">进入购物车</a>
+				</div>
+			</div>
+			<!--商品详情-->
+			<div class="boxs3">
+				<img src="img/tu.jpg" />
+			</div>
+		
+			<div class="boxs4">
+				<div class="lft">
+					<ul class="box1">
+						<li class="active"><a href="#">商品详情</a></li>
+						<li><a href="#">评论（1149）</a></li>
+						<li><a href="#">服务说明</a></li>
+					</ul>
+					<div id="box2" class="qie">
+						<img src="img/xiangqing7.jpg" class="img1"/>
+						<img src="img/xiangqing8.jpg" class="img2"/>
+						<img src="img/xiangqing9.PNG" class="img3"/>
+						<img src="img/shuangliren1_01.jpg" />
+						<img src="img/shuangliren1_02.jpg" />
+						<img src="img/shuangliren1_03.jpg" />						
+						<img src="img/shuangliren1_05.jpg" />						
+						<img src="img/shuangliren1_07.jpg" />
+						<img src="img/shuangliren1_08.jpg" />						
+						<img src="img/shuangliren1_10.jpg" />
+						<img src="img/shuangliren1_11.jpg" />
+						<img src="img/shuangliren1_12.jpg" />
+						<img src="img/shuangliren1_13.jpg" />
+						<img src="img/shuangliren1_14.jpg" />
+						<img src="img/shuangliren1_15.jpg" />
+						<img src="img/shuangliren1_16.jpg" />
+						<img src="img/shuangliren1_17.jpg" />
+						<img src="img/shuangliren1_18.jpg" />
+						<img src="img/shuangliren1_19.jpg" />
+						<img src="img/shuangliren1_20.jpg" />
+						<img src="img/shuangliren1_21.jpg" />
+						<img src="img/shuangliren1_22.jpg" />
+						<img src="img/shuangliren1_23.jpg" />						
+						<img src="img/shuangliren1_25.jpg" />						
+						<img src="img/shuangliren1_27.jpg" />
+						<img src="img/shuangliren1_28.jpg" />
+						<img src="img/shuangliren1_29.jpg" />
+						<img src="img/shuangliren1_30.jpg" />						
+						<img src="img/shuangliren1_32.jpg" />
+						<img src="img/shuangliren1_33.jpg" />
+						<img src="img/shuangliren1_34.jpg" />
+						<img src="img/shuangliren1_35.jpg" />
+						<img src="img/shuangliren1_36.jpg" />
+						<img src="img/shuangliren1_37.jpg" />				
+						<img src="img/shuangliren1_39.jpg" />
+						<img src="img/shuangliren1_40.jpg" />
+						<img src="img/shuangliren1_41.jpg" />
+						<img src="img/shuangliren1_42.jpg" />
+						<img src="img/shuangliren1_43.jpg" />
+						<img src="img/shuangliren1_44.jpg" />
+						<img src="img/shuangliren1_45.jpg" />
+						<img src="img/shuangliren1_46.jpg" />
+						<img src="img/shuangliren1_47.jpg" />
+						<img src="img/shuangliren1_48.jpg" />
+						<img src="img/shuangliren1_49.jpg" />
+						<img src="img/shuangliren1_50.jpg" />
+						<div class="wenzi">
+							<p>功能说明  <br/>一，铸铁锅功能说明 1， 煸炒－油热后，可进行葱姜的爆香，或直接放入菜料，进行传统煸炒即可。 2，煎烤－油热后，放入事先沥干的食物进行煎炸或烧烤；不要急于翻面，可以先试着用锅铲推动食物，如果能推动了，就可以翻面；如果还无法推动，则需要再等候一会儿。食物翻面之后，即可调成小火继续烹饪； 3，炖煮（包括桑拿类）－锅热后，放入菜料和各类配料及调味品，盖上锅盖，即可烹饪；待锅中水份煮开，调成小火继续烹饪一段时间，直到烹饪结束。 二，不锈钢锅具功能说明 1，一般炒菜-冷油冷锅，不必预热，操作简单 2，煎炸食物-热油热锅，不粘底。
+ <br/>商品特性 <br/>铸铁锅：采用珐琅铸铁材料，适用于多种炉灶以及烤箱，融合传统及现代 制作工艺，传热迅速、持久保温、坚固耐用 －时尚外观：珐琅瓷表面，色彩亮丽，可直接端上餐桌，对餐桌不易产生磨损， 更增添了 更添餐桌上的艺术美感 －美味烹饪
+ <br/>使用方法 <br/>一，铸铁锅使用方法：1，中小火是指火焰不超过锅具的底盘，既节省能源，又能避免锅具外壁珐琅瓷表面发黑 2，“水开调小火”：炖、煮、焖、烧等烹饪时，锅中水份一旦煮开，就应调成小火继续烹饪，有效防止溢锅 3，“油热调小火”：煎、炸、爆、烤等烹饪时，油热之后，就应调成小火继续烹饪，食物受热均匀，不会烧焦锅具使用前， 二，不锈钢锅具使用方法： 1，先用温水兑入白醋将锅具清洗一次。 2，清洗锅具，趁锅热，利用余温可轻松洗去污渍。 3，清洗干净锅具，请擦干锅具，保持干燥。 4，切勿在冷锅冷水中放入大量食盐。 5，使用中小火烹饪。
+ <br/>赠品功能说明  <br/>一，中片刀，生食切配。多用刀，熟食切配。蔬果刀，小颗蔬菜和水果。 二，剪刀，剪食物，软性材质。
+ <br/>赠品特性  <br/>一，刀具钢材德国进口，持久锋利 。 二，锅铲，使用，坚固。 三，剪刀，实用锋利。</p>
+						</div>
+					</div>
+					<div id="box3" class="qie">
+						<img src="img/pingjia.jpg" />
+						<img src="img/pingjia1.jpg" />
+						<img src="img/pingjia2.jpg" />
+					</div>
+					<div id="box4" class="qie">
+						<img src="img/fuwu.jpg" />
+						<img src="img/fuwu1.jpg" />
+						<img src="img/fuwu2.jpg" />
+						<img src="img/fuwu3.jpg" />
+						
+					</div>
+					
+				</div>
+				<div class="rgt">
+					<p>大家都在看</p>
+					<dl>
+						<dt><img src="img/1439688857402259845.jpg" /></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/1439579719863389978.jpg" /></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/1439587764610155932.jpg" /></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/1439687905877505959.jpg" /></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/1450653840760132053.jpg" /></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/1456278357624251976.jpg" /></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					
+					<dl>
+						<dt><img src="img/1463700581627785118.jpg"/></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/14123.jpg" /></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/141234.jpg"/></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt><img src="img/1412345.jpg" /></dt>
+						<dd>
+							<a href="#">韩国进口惠人二原汁机尊贵金（营养提取机 低速旋转</a>
+							<span>¥2298</span>
+						</dd>
+					</dl>
+						
+				</div>
+			</div>
+			
+			<div class="lst">
+				<b><span>看看其他同类商品</span></b>
+				<dl>
+					<dt><img src="img/qita1.jpg"/></dt>
+					<dd>
+						<a href="#">双立人TWIN NovaIII厨房能手中式炒锅套装<br/></a>
+						<span>¥2288</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/qita2.jpg"/></dt>
+					<dd>
+						<a href="#">双立人TWIN NovaIII厨房能手中式炒锅套装<br/></a>
+						<span>¥2998</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/qita3.jpg"/></dt>
+					<dd>
+						<a href="#">双立人TWIN NovaIII厨房能手中式炒锅套装<br/></a>
+						<span>¥2888</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt><img src="img/qita4.jpg"/></dt>
+					<dd>
+						<a href="#">双立人TWIN NovaIII厨房能手中式炒锅套装<br/></a>
+						<span>¥2888</span>
+					</dd>
+				</dl>
+			</div>	
+		</div>
+	
+	
+<!--footer-->		
+		<div class="foot">
+			
+		</div>
+		
+<!--两侧的div-->
+		<div class="righ">
+   			<div class="ceb"></div>
+			<div id="right">
+		    	<ul class="right_t">
+		    		<li>
+		        	<i class="demo-icon icon-user">&#xe805;</i><em class="s">我的会员</em>     	
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-basket shop_icon">&#xe80e;</i> <em class="s"><a href="shoppingCar.html">购物车</a></em>  
+		       		 <div class="numb">0</div>
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-heart-empty-1">&#xe80d;</i> <em class="s">我的关注</em>  	     	
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-headphones">&#xe802;</i>  <em class="s">在线客服</em>    	
+		    		</li>
+		    		
+		    	</ul>
+		    	<ul class="right_b">
+		    		<li>
+		        	<i class="demo-icon icon-up-open-big">&#xe809;</i>	 <em class="s"><a href="index.html">返回首页</a></em>  	
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-pencil">&#xe80f;</i>	 <em class="s">调卷问查</em>  	
+		    		</li>
+		    		<li>
+		        	<i class="demo-icon icon-up-open-big">&#xe809;</i>	 <em class="s">返回顶部</em>  	
+		    		</li>
+		    	</ul>
+		    	
+	   		 </div>
+		</div>
+   	
+	</body>
+</html>
+
+
+
+<script src="js/jquery.fly.min.js"></script>
+<!--<script src="js/requestAnimationFrame.js"></script> -->
+<script src="js/detailsPage.js"></script>

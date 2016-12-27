@@ -1,0 +1,366 @@
+.head{
+	
+	width:100%;
+	height:80px;
+	background:#f1476e;
+}
+.head .hea{
+	width:1000px;
+	height: 80px;
+	margin:0 auto;
+}
+.head .hea img{
+	width:1000px;
+	height: 80px;
+}
+.gogao{
+	background: #f5f5f5;
+	width:100%;
+	height:20px;
+	clear: both;
+}
+.gogaobox{
+	width: 1000px;
+	height: 20px;
+	margin: 0 auto;
+}
+.gogaobox a{
+	color: #656565;
+	text-decoration: none;
+}
+.sj{
+	width: 133px;
+	height: 20px;
+	line-height: 20px;
+	float: right;
+}
+.dh{
+	height:20px;
+	line-height: 20px;
+	float: right;
+	position: relative;
+}
+.dh li{
+	float: left;	
+}
+.dh li a{
+	display: block;
+	margin: 0 10px;
+	float: left;
+}
+.dh li a:hover{
+	color: red;
+}
+.dh .weima{
+	background: white;
+	position: absolute;
+	right:20px;
+	top:17px;
+	display: none;
+	z-index: 3;
+}
+.logo{
+	width:1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	
+}
+.logo .lg{
+	float: left;
+}
+.logo .rt{
+	float: right;
+	margin-top: 20px;
+}
+/*main*/
+/*没商品时的购物车*/
+.boxs{
+	width: 100%;
+	border-bottom: 1px solid #ebe8e8;
+}
+.box{
+	width: 998px;
+	height: 300px;
+	margin: 20px auto;
+	border: 1px solid #f5f5f5;
+	display: none;
+}
+.box dl{
+	width: 450px;
+	height: 140px;
+	margin: 80px auto 0;
+}
+.box dl dt{
+	float: left;
+}
+.box dl dd{
+	width: 280px;
+	margin-top: 40px;
+	float: left;
+}
+.box dl dd span{
+	font-size: 20px;
+	color: #999999;
+}
+.box dl dd p{
+	line-height: 25px;
+	font-size: 14px;
+	color: #999999;
+}
+.box dl dd a{
+	margin-left: 20px;
+	color: #9c82ed;
+}
+.box .btn{
+	width: 60px;
+	height: 20px;
+	background: red;
+	color: white;
+	border:none;
+	border-radius: 3px;
+}
+/*购买之后的购物车*/
+.car_box{
+	width: 1000px;
+	margin: 0 auto;
+/*	display: none;*/
+}
+.my_car{
+	padding-top: 10px;
+	font-size: 16px;
+	color: #222;
+	line-height: 21px;	
+}
+.mycar{
+	border:1px solid #E8E8E8;
+/*	height: 200px;*/
+	margin-top: 10px;
+}
+/*购物车商品信息栏*/
+.car_tit{
+	width: 1000px;
+	background: #f2f2f2;
+	font-size: 12px;
+	color: #666;
+	border-bottom: 1px solid #E8E8E8;
+	overflow: hidden;
+}
+.car_tit li{
+	float: left;
+	text-align: left;
+	line-height: 40px;
+}
+.tit_chick{
+	padding: 0 15px 0 20px;
+	width: 113px;
+}
+.tit_meg{
+	padding: 0 80px 0 0;
+	width: 280px;
+}
+.tit_price{
+	width: 140px;	
+}
+.tit_content{
+	width: 70px;
+	text-align: center;
+	padding: 0 70px 0 0;
+}
+.tit_sum{
+	width: 140px;
+
+}
+.tit_action{
+	width: 70px;
+}
+
+/*加入购物车的每一个商品*/
+.cart_form{
+	overflow: hidden;
+}
+.shop{
+	padding: 20px 0 20px 53px;
+	position: relative;
+	display: inline-block;
+}
+.c_meg{
+	float: left;
+	color: #666;
+}
+.c_meg dt{
+	float: left;
+	margin-right: 15px;
+}
+.c_meg dt img{
+	width: 80px;
+	height: 84px;
+}
+.c_meg dd{
+	padding-right: 80px;
+	width: 280px;
+	float: left;
+}
+.m_tit{
+	line-height: 18px;
+}
+.m_tit a{
+	color: #666;
+}
+.c_price{
+	float: left;
+	width: 140px;
+	margin-top: 33px;
+	color: #666;
+}
+.c_price_num{
+	line-height: 20px;
+}
+.c_price_num i{
+	font-size: 14px;
+	font-family: arial;
+	font-style: normal;
+}
+.c_content{
+	float: left;
+	text-align: center;
+	width: 71px;
+	padding-right: 70px ;
+	margin-top: 33px;
+}
+.c_content .reduce{
+	color: #222;
+	cursor: pointer;
+}.c_content a{
+	float: left;
+	width: 18px;
+	height: 18px;
+	border: 1px solid #ddd;
+	text-align: center;
+	font-size: 20px;
+	line-height: 17px;
+}
+.c_content input{
+	border: medium none;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	height: 16px;
+	line-height: 18px;
+	width: 30px;
+	float: left;
+	text-align: center;
+	color: #666;
+}
+.c_content .adds{
+	color: #222;
+	outline: none;
+}
+.c_sum{
+	float: left;
+	width: 140px;
+	margin-top: 33px;
+	color: #666;
+}
+.c_sum p{
+	line-height: 20px;
+}
+.c_sum i{
+	font-size: 14px;
+	font-family: arial;
+	font-style: normal;
+}
+.c_action{
+	float: left;
+	width: 68px;
+	margin-top: 33px;
+}
+.i_del{
+	font-style: normal;
+	cursor: pointer;
+}
+.c_check{
+	position:absolute;
+	left: 20px;
+	top: 54px;
+	z-index: 2;
+}
+.c_check input{
+	height: 13px;
+	width: 13px;
+	vertical-align: middle;
+}
+/*商品结算*/
+.cart_clear{
+	border: 1px solid #E8E8E8;
+	margin-top: 10px;
+}
+.c_balance{
+	padding: 20px;
+	overflow: hidden;
+}
+.c_count{
+	float: right;
+	color: #333;
+}
+.c_count p{
+	line-height: 22px;
+}
+.c_count p i{
+	font-style: normal;
+}
+.c_clearfix{
+	clear: both;
+}
+.c_rt{
+	width: 100px;
+	display: block;
+	text-align: right;
+	float: right;
+}
+.fs{
+	font-size: 14px;
+}
+.c_lt{
+	width: 67px;
+	text-align: center;
+	display: block;
+	float: right;
+}
+.c_piece{
+	float: right;
+}
+.c_paid{
+	color: #F70800;
+	font-size: 18px;
+}
+.c_paid i{
+	font-size: 20px;
+}
+.fw{
+	font-weight: bold;
+}
+.c_balance_bt{
+	height: 50px;
+	background: #f2f2f2;
+	border-top: 1px solid #e8e8e8;
+}
+.b_check{
+	float: left;
+	padding: 17px 0 0 20px;
+}
+.b_del{
+	float: left;
+	color: #666;
+	margin-left: 20px;
+	margin-top: 22px;
+	cursor: pointer;
+}
+.balance_bt{
+	float: right;
+	width: 160px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	background: #FF504A;
+	line-height: 50px;
+}
